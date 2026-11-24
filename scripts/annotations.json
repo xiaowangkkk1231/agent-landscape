@@ -1087,5 +1087,41 @@
   "note": "Firecracker 微虚机隔离，是编码类 Agent 的基础设施刚需。",
   "diff": "中",
   "lic": "Apache-2.0"
+ },
+ "mattpocock/skills": {
+  "name": "mattpocock/skills",
+  "cat": "skills",
+  "pitch": "写代码前先对齐要做成什么",
+  "aud": "需求模糊、要长期维护的项目",
+  "note": "技能小而可组合，招牌是 /grill-me：让 Agent 一次只问一个问题，把设计分支问到没有歧义再动手；作者明确反对「大框架管住流程」，控制权留在人手里。",
+  "diff": "易",
+  "lic": "MIT"
+ },
+ "obra/superpowers": {
+  "name": "obra/superpowers",
+  "cat": "skills",
+  "pitch": "给编码 Agent 装一整套工程纪律",
+  "aud": "想让 Agent 按固定流程交付",
+  "note": "15 个技能串成固定顺序：头脑风暴、写计划、worktree 隔离、TDD、子 Agent 执行、逐任务评审、收尾；文档写明这是强制流程，不是建议。",
+  "diff": "易",
+  "lic": "MIT"
+ },
+ "addyosmani/agent-skills": {
+  "name": "addyosmani/agent-skills",
+  "cat": "skills",
+  "pitch": "把经典 SDLC 拆成六个命令",
+  "aud": "要上生产、要质量门的团队",
+  "note": "从 /spec 到 /ship 覆盖定义、计划、构建、验证、评审、发布，约 25 个技能加四类评审人格；每个技能都附「借口表」，提前反驳「太简单不用测」这类话。",
+  "diff": "中",
+  "lic": "MIT"
+ },
+ "backnotprop/pstack": {
+  "name": "backnotprop/pstack",
+  "cat": "skills",
+  "pitch": "先证明它真能跑，再说做完了",
+  "aud": "难复现的 bug、数据迁移、整夜自主任务",
+  "note": "Lauren Tan（Cursor）的工作流镜像，上游在 cursor/plugins；/poteto-mode 挑 22 个 playbook，不设规划技能，重量压在复现、取证与多模型评审。",
+  "diff": "中",
+  "lic": "MIT"
  }
 }

@@ -4,7 +4,7 @@
 
 **在线浏览 → https://xiaowang018.github.io/agent-landscape/**
 
-收录 **121 个仓库 / 15 个赛道 / 累计 723.9 万星标**。每个项目都标注了中文定位、适用人群、上手门槛和维护状态，而不是只丢一个 star 数排名。页面末尾另设「科研前沿」区块，收录 18 篇 2025–2026 年会改变 Agent 系统设计与评测结论的论文与基准（不计入上面的仓库统计）。本轮新增「Agent 学习路线」：从官方课程和框架教程入门，接着做项目，再用公开基准验证，不把课程证书或榜单分数当成工程能力。
+收录 **125 个仓库 / 16 个赛道 / 累计 802.1 万星标**。每个项目都标注了中文定位、适用人群、上手门槛和维护状态，而不是只丢一个 star 数排名。页面末尾另设「科研前沿」区块，收录 18 篇 2025–2026 年会改变 Agent 系统设计与评测结论的论文与基准（不计入上面的仓库统计）。本轮新增第 16 个赛道「技能包 / 工作流」，以及「Agent 学习路线」：从官方课程和框架教程入门，接着做项目，再用公开基准验证，不把课程证书或榜单分数当成工程能力。
 
 ---
 
@@ -24,6 +24,7 @@
 | 深度研究 / 检索 | 自动调研并产出报告 | 6 |
 | 记忆层 | 跨会话记住人和事 | 7 |
 | 工具协议 / MCP | 给 Agent 装手脚的标准接口 | 9 |
+| 技能包 / 工作流 | 把工程纪律写进提示词层，管 Agent 怎么干活 | 4 |
 | Agent 可观测 / 评测 | 看得见它干了什么、跑得好不好 | 6 |
 | Agentic RL / 训练环境 | 训练 Agent 自己的策略 | 5 |
 | Agent 基础设施 | 沙箱、运行时等底座 | 1 |
@@ -34,14 +35,25 @@
 | :-: | --- | --: | --- | --- |
 | 1 | [morluto/rea](https://github.com/morluto/rea) | 475,682 | TypeScript | MIT |
 | 2 | [openclaw/openclaw](https://github.com/openclaw/openclaw) | 395,121 | TypeScript | MIT |
-| 3 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 309,604 | JavaScript | MIT |
-| 4 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 286,111 | TypeScript | MIT |
-| 5 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 265,675 | Python | MIT |
-| 6 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 228,818 | TypeScript | MIT |
-| 7 | [n8n-io/n8n](https://github.com/n8n-io/n8n) | 211,913 | TypeScript | Sustainable Use |
-| 8 | [Significant-Gravitas/AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) | 188,155 | Python | Polyform + MIT |
+| 3 | [mattpocock/skills](https://github.com/mattpocock/skills) | 331,701 | Shell | MIT |
+| 4 | [obra/superpowers](https://github.com/obra/superpowers) | 325,437 | Shell | MIT |
+| 5 | [affaan-m/ECC](https://github.com/affaan-m/ECC) | 309,604 | JavaScript | MIT |
+| 6 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 286,111 | TypeScript | MIT |
+| 7 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 265,675 | Python | MIT |
+| 8 | [anomalyco/opencode](https://github.com/anomalyco/opencode) | 228,818 | TypeScript | MIT |
 
-一个比上次更极端的现象：**前八名里有六个是「成品 Agent / Harness」，没有一个传统意义上的框架。** 榜首 rea 用 Agent 做逆向工程拿到 47.6 万星，OpenClaw、Hermes 这类「装完就能常驻干活」的个人 Agent 运行时包揽第二和第五；n8n 是前八里唯一的可视化平台，LangChain 这种框架鼻祖已跌出前八。入口已经彻底从「自己搭」变成「装完直接用」。
+「前八里六个是成品 Agent / Harness，没有一个传统框架」这个判断这轮仍然成立——但要加一条：**第三、第四名是两个技能包，而且都不是代码仓库意义上的「程序」**。榜首 rea 用 Agent 做逆向工程拿到 47.6 万星，OpenClaw、Hermes 这类「装完就能常驻干活」的运行时占据第二和第七；n8n 掉到第九，LangChain 这种框架鼻祖仍在八名之外。入口从「自己搭」变成「装完直接用」之后，下一层竞争已经挪到了**怎么让装好的 Agent 按规矩干活**。
+
+这也是本轮新增「技能包 / 工作流」赛道的原因。四个包回答的是四个不同问题，不是四选一的竞品：
+
+| 技能包 | 问的问题 | 下手位置 | 什么时候该用 |
+| --- | --- | --- | --- |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 我们是否在做同一件事？ | 写代码之前对齐意图，招牌 `/grill-me` 一次一问 | 需求还在雾里、代码要活很久 |
+| [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills) | 整条流程走完了吗？ | 六段 SDLC：`/spec` → `/plan` → `/build` → `/test` → `/review` → `/ship` | 团队要上生产、要可预期的质量门 |
+| [obra/superpowers](https://github.com/obra/superpowers) | 每一步都真的执行了吗？ | 15 个技能排成固定顺序，写明是强制流程而非建议 | 想要一套开箱即用的完整纪律 |
+| [backnotprop/pstack](https://github.com/backnotprop/pstack) | 你能证明它真的能跑吗？ | 事后复现、取证、多模型交叉评审；刻意不设规划技能 | 难复现的 bug、迁移、整夜自主任务 |
+
+实践里更常见的做法是混用而不要全装：改一个按钮颜色不需要 PRD，隔夜跑的迁移必须有证据。技能装太多会挤占上下文，还会互相抢命令名（两个「总入口」都想接管 `/tdd`）。
 
 第三个变化是「训练」这一层终于被补上了，新增赛道 **Agentic RL / 训练环境**：verl、slime、prime-rl、ART、OpenEnv。原因是这半年 arXiv 上的 Agent 研究重心明显从「怎么调提示词」挪到「怎么造可验证环境和 verifier」——SETA 造了 4,500+ 个终端环境、腾讯混元在做环境随模型一起变难、BIRD-RL 在解有状态数据环境的空间效率。选型上也多了个问题：跑通的流程要不要固化成小模型，把每次的推理钱省下来。
 
@@ -142,11 +154,11 @@
 ```
 agent-landscape/
 ├── index.html                  # 产物：单文件页面，无外部依赖，双击即可本地打开
-├── data.json                   # 机器抓的元数据（121 条），由 fetch.py 写
+├── data.json                   # 机器抓的元数据（125 条），由 fetch.py 写
 └── scripts/
     ├── fetch.py                # 抓 GitHub API，刷新 data.json
     ├── annotations.json        # 人工标注（中文定位、适合谁、点评、门槛、赛道）
-    ├── tracks.json             # 15 个赛道的顺序、标题与副标题
+    ├── tracks.json             # 16 个赛道的顺序、标题与副标题
     ├── template.html           # 页面模板，样式与交互都在这里
     └── build.py                # 合并三者，生成 index.html
 ```
@@ -174,7 +186,7 @@ python scripts/build.py           # 写 index.html
 python scripts/build.py --check   # 只校验不写文件
 ```
 
-不带 `GITHUB_TOKEN` 也能跑，但未认证配额只有 **60 次/小时**，而且 504 超时同样计次 —— 121 个仓库需要跑三四轮。带 token 是 5000 次/小时，一次就够。
+不带 `GITHUB_TOKEN` 也能跑，但未认证配额只有 **60 次/小时**，而且 504 超时同样计次 —— 125 个仓库需要跑三四轮。带 token 是 5000 次/小时，一次就够。
 
 `fetch.py` 处理了抓数据时最烦的两件事：
 
@@ -202,5 +214,7 @@ python scripts/build.py --check   # 只校验不写文件
 这份清单来自一次实际的选型需求：框架太多、评测文章太旧、star 数又不能直接当质量用。所以把"星数"和"它到底能干什么、适不适合我"放在一起看。
 
 收录范围有明确边界：**只收 Agent 相关**，纯 LLM 应用框架、模型推理框架、聊天客户端不在内。判断标准是"这东西能不能自己决定下一步做什么"。
+
+唯一的例外是「技能包 / 工作流」这一赛道：它们本身不做决策，只是写给 Agent 看的 Markdown 纪律。之所以收进来，是因为选型时绕不过去——你已经有一堆能自己干活的 Agent 了，接下来要解决的问题是它们干得靠不靠谱。这一赛道单独标注，不计入「自主性」这条判断线。
 
 发现分类错了、定位写偏了、或者漏掉了重要项目，欢迎开 issue 指正。本仓库只整理公开信息，各项目的版权与许可证归属其原作者。
