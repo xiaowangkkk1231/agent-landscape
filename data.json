@@ -59,6 +59,28 @@
   "open_issues": 184
  },
  {
+  "full_name": "AgentOps-AI/agentops",
+  "url": "https://github.com/AgentOps-AI/agentops",
+  "homepage": "https://agentops.ai",
+  "desc": "Python SDK for AI agent monitoring, LLM cost tracking, benchmarking, and more. Integrates with most LLMs and agent frameworks including CrewAI, Agno, OpenAI Agents SDK, Langchain, Autogen, AG2, and CamelAI",
+  "stars": 5972,
+  "forks": 668,
+  "lang": "Python",
+  "license": "MIT",
+  "topics": [
+   "agent",
+   "agentops",
+   "agents-sdk",
+   "ai",
+   "anthropic",
+   "autogen"
+  ],
+  "pushed_at": "2026-06-25",
+  "created_at": "2023-08",
+  "archived": false,
+  "open_issues": 209
+ },
+ {
   "full_name": "agentscope-ai/agentscope",
   "url": "https://github.com/agentscope-ai/agentscope",
   "homepage": "",
@@ -117,6 +139,21 @@
   "open_issues": 1992
  },
  {
+  "full_name": "anomalyco/opencode",
+  "url": "https://github.com/anomalyco/opencode",
+  "homepage": "https://opencode.ai",
+  "desc": "The open source coding agent.",
+  "stars": 228818,
+  "forks": 31113,
+  "lang": "TypeScript",
+  "license": "MIT",
+  "topics": [],
+  "pushed_at": "2026-11-24",
+  "created_at": "2025-04",
+  "archived": false,
+  "open_issues": 4011
+ },
+ {
   "full_name": "anthropics/claude-code",
   "url": "https://github.com/anthropics/claude-code",
   "homepage": "https://code.claude.com/docs/en/overview",
@@ -145,6 +182,28 @@
   "created_at": "2023-04",
   "archived": false,
   "open_issues": 0
+ },
+ {
+  "full_name": "Arize-ai/phoenix",
+  "url": "https://github.com/Arize-ai/phoenix",
+  "homepage": "https://arize.com/docs/phoenix",
+  "desc": "AI Observability & Evaluation",
+  "stars": 12387,
+  "forks": 1324,
+  "lang": "Python",
+  "license": "NOASSERTION",
+  "topics": [
+   "agents",
+   "ai-monitoring",
+   "ai-observability",
+   "aiengineering",
+   "anthropic",
+   "datasets"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2022-11",
+  "archived": false,
+  "open_issues": 1302
  },
  {
   "full_name": "assafelovic/gpt-researcher",
@@ -279,6 +338,48 @@
   "open_issues": 678
  },
  {
+  "full_name": "charmbracelet/crush",
+  "url": "https://github.com/charmbracelet/crush",
+  "homepage": "",
+  "desc": "Glamourous agentic coding for all 💘",
+  "stars": 29176,
+  "forks": 2394,
+  "lang": "Go",
+  "license": "NOASSERTION",
+  "topics": [
+   "agentic-ai",
+   "ai",
+   "llms",
+   "ravishing"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2025-05",
+  "archived": false,
+  "open_issues": 582
+ },
+ {
+  "full_name": "ChromeDevTools/chrome-devtools-mcp",
+  "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+  "homepage": "https://developer.chrome.com/docs/devtools/agents",
+  "desc": "Chrome DevTools for coding agents",
+  "stars": 59036,
+  "forks": 4909,
+  "lang": "TypeScript",
+  "license": "Apache-2.0",
+  "topics": [
+   "browser",
+   "chrome",
+   "chrome-devtools",
+   "debugging",
+   "devtools",
+   "mcp"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2025-09",
+  "archived": false,
+  "open_issues": 119
+ },
+ {
   "full_name": "cline/cline",
   "url": "https://github.com/cline/cline",
   "homepage": "https://cline.bot",
@@ -292,6 +393,28 @@
   "created_at": "2024-07",
   "archived": false,
   "open_issues": 1819
+ },
+ {
+  "full_name": "confident-ai/deepeval",
+  "url": "https://github.com/confident-ai/deepeval",
+  "homepage": "https://deepeval.com",
+  "desc": "The LLM Evaluation Framework",
+  "stars": 19611,
+  "forks": 2247,
+  "lang": "Python",
+  "license": "Apache-2.0",
+  "topics": [
+   "evaluation-framework",
+   "evaluation-metrics",
+   "llm-evaluation",
+   "llm-evaluation-framework",
+   "llm-evaluation-metrics",
+   "python"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2023-08",
+  "archived": false,
+  "open_issues": 879
  },
  {
   "full_name": "continuedev/continue",
@@ -460,6 +583,25 @@
   "open_issues": 462
  },
  {
+  "full_name": "github/github-mcp-server",
+  "url": "https://github.com/github/github-mcp-server",
+  "homepage": "",
+  "desc": "GitHub's official MCP Server",
+  "stars": 34697,
+  "forks": 5414,
+  "lang": "Go",
+  "license": "MIT",
+  "topics": [
+   "github",
+   "mcp",
+   "mcp-server"
+  ],
+  "pushed_at": "2026-11-21",
+  "created_at": "2025-03",
+  "archived": false,
+  "open_issues": 461
+ },
+ {
   "full_name": "google-gemini/gemini-cli",
   "url": "https://github.com/google-gemini/gemini-cli",
   "homepage": "https://geminicli.com",
@@ -526,6 +668,28 @@
   "open_issues": 237
  },
  {
+  "full_name": "HKUDS/nanobot",
+  "url": "https://github.com/HKUDS/nanobot",
+  "homepage": "https://nanobot.wiki",
+  "desc": "Your lightweight open-source personal agent.",
+  "stars": 50290,
+  "forks": 8760,
+  "lang": "Python",
+  "license": "MIT",
+  "topics": [
+   "agent-framework",
+   "ai-agent",
+   "ai-agents",
+   "chatbot",
+   "chatops",
+   "discord-bot"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2026-02",
+  "archived": false,
+  "open_issues": 866
+ },
+ {
   "full_name": "huggingface/smolagents",
   "url": "https://github.com/huggingface/smolagents",
   "homepage": "https://huggingface.co/docs/smolagents",
@@ -561,6 +725,28 @@
   "created_at": "2023-12",
   "archived": false,
   "open_issues": 1295
+ },
+ {
+  "full_name": "khoj-ai/khoj",
+  "url": "https://github.com/khoj-ai/khoj",
+  "homepage": "https://khoj.dev",
+  "desc": "Your AI second brain. Self-hostable. Get answers from the web or your docs. Build custom agents, schedule automations, do deep research. Turn any online or local LLM into your personal, autonomous AI (gpt, claude, gemini, llama, qwen, mistral). Get started - free.",
+  "stars": 38221,
+  "forks": 2563,
+  "lang": "Python",
+  "license": "AGPL-3.0",
+  "topics": [
+   "agent",
+   "ai",
+   "assistant",
+   "chat",
+   "chatgpt",
+   "emacs"
+  ],
+  "pushed_at": "2026-08-02",
+  "created_at": "2021-08",
+  "archived": false,
+  "open_issues": 178
  },
  {
   "full_name": "langchain-ai/langchain",
@@ -607,6 +793,21 @@
   "open_issues": 482
  },
  {
+  "full_name": "langchain-ai/open_deep_research",
+  "url": "https://github.com/langchain-ai/open_deep_research",
+  "homepage": "",
+  "desc": "",
+  "stars": 12672,
+  "forks": 1867,
+  "lang": "Python",
+  "license": "MIT",
+  "topics": [],
+  "pushed_at": "2026-08-10",
+  "created_at": "2024-11",
+  "archived": true,
+  "open_issues": 70
+ },
+ {
   "full_name": "langflow-ai/langflow",
   "url": "https://github.com/langflow-ai/langflow",
   "homepage": "http://www.langflow.org",
@@ -627,6 +828,28 @@
   "created_at": "2023-02",
   "archived": false,
   "open_issues": 1345
+ },
+ {
+  "full_name": "langfuse/langfuse",
+  "url": "https://github.com/langfuse/langfuse",
+  "homepage": "https://langfuse.com",
+  "desc": "🪢 Open source AI engineering platform: AI Gateway, agent observability, evals, and prompt/skill management, built on OpenTelemetry. One open platform for every AI call and every agent. Self-host or use Langfuse Cloud.",
+  "stars": 37765,
+  "forks": 4303,
+  "lang": "TypeScript",
+  "license": "NOASSERTION",
+  "topics": [
+   "ai-gateway",
+   "analytics",
+   "evaluation",
+   "gateway",
+   "langchain",
+   "large-language-models"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2023-05",
+  "archived": false,
+  "open_issues": 1203
  },
  {
   "full_name": "langgenius/dify",
@@ -671,6 +894,72 @@
   "open_issues": 1
  },
  {
+  "full_name": "livekit/agents",
+  "url": "https://github.com/livekit/agents",
+  "homepage": "https://docs.livekit.io/agents",
+  "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
+  "stars": 15317,
+  "forks": 4189,
+  "lang": "Python",
+  "license": "Apache-2.0",
+  "topics": [
+   "agents",
+   "ai",
+   "openai",
+   "real-time",
+   "video",
+   "voice"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2023-10",
+  "archived": false,
+  "open_issues": 1018
+ },
+ {
+  "full_name": "mastra-ai/mastra",
+  "url": "https://github.com/mastra-ai/mastra",
+  "homepage": "https://mastra.ai",
+  "desc": "Mastra is the modern TypeScript framework for AI-powered applications and agents.",
+  "stars": 29771,
+  "forks": 3131,
+  "lang": "TypeScript",
+  "license": "NOASSERTION",
+  "topics": [
+   "agents",
+   "ai",
+   "chatbots",
+   "evals",
+   "javascript",
+   "llm"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2024-08",
+  "archived": false,
+  "open_issues": 920
+ },
+ {
+  "full_name": "mcp-use/mcp-use",
+  "url": "https://github.com/mcp-use/mcp-use",
+  "homepage": "https://manufact.com",
+  "desc": "The fullstack MCP framework to develop MCP Apps for ChatGPT / Claude & MCP Servers for AI Agents.",
+  "stars": 11003,
+  "forks": 1560,
+  "lang": "TypeScript",
+  "license": "MIT",
+  "topics": [
+   "agent-plugins",
+   "agentic-framework",
+   "ai",
+   "apps-sdk",
+   "chatgpt",
+   "claude-code"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2025-03",
+  "archived": false,
+  "open_issues": 134
+ },
+ {
   "full_name": "mem0ai/mem0",
   "url": "https://github.com/mem0ai/mem0",
   "homepage": "https://mem0.ai",
@@ -691,6 +980,28 @@
   "created_at": "2023-06",
   "archived": false,
   "open_issues": 982
+ },
+ {
+  "full_name": "MemTensor/MemOS",
+  "url": "https://github.com/MemTensor/MemOS",
+  "homepage": "https://memos.openmem.net",
+  "desc": "Self-evolving memory OS for LLM & AI Agents: ultra-persistent memory, hybrid-retrieval, and cross-task skill reuse, with 35.24% token savings and DeepSeek Harness support.",
+  "stars": 12489,
+  "forks": 1132,
+  "lang": "TypeScript",
+  "license": "Apache-2.0",
+  "topics": [
+   "agent",
+   "agentic-ai",
+   "ai",
+   "ai-agents",
+   "chatgpt",
+   "claude"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2025-07",
+  "archived": false,
+  "open_issues": 140
  },
  {
   "full_name": "microsoft/autogen",
@@ -759,6 +1070,21 @@
   "open_issues": 21
  },
  {
+  "full_name": "microsoft/OmniParser",
+  "url": "https://github.com/microsoft/OmniParser",
+  "homepage": "",
+  "desc": "A simple screen parsing tool towards pure vision based GUI agent",
+  "stars": 25634,
+  "forks": 2239,
+  "lang": "Jupyter Notebook",
+  "license": "CC-BY-4.0",
+  "topics": [],
+  "pushed_at": "2026-11-14",
+  "created_at": "2024-09",
+  "archived": false,
+  "open_issues": 234
+ },
+ {
   "full_name": "microsoft/playwright-mcp",
   "url": "https://github.com/microsoft/playwright-mcp",
   "homepage": "https://www.npmjs.com/package/@playwright/mcp",
@@ -775,6 +1101,28 @@
   "created_at": "2025-03",
   "archived": false,
   "open_issues": 0
+ },
+ {
+  "full_name": "microsoft/RD-Agent",
+  "url": "https://github.com/microsoft/RD-Agent",
+  "homepage": "https://rdagent.azurewebsites.net/",
+  "desc": "Research and development (R&D) is crucial for the enhancement of industrial productivity, especially in the AI era, where the core aspects of R&D are mainly focused on data and models. We are committed to automating these high-value generic R&D processes through R&D-Agent, which lets AI drive data-driven AI. 🔗https://aka.ms/RD-Agent-Tech-Report",
+  "stars": 15466,
+  "forks": 2066,
+  "lang": "Python",
+  "license": "MIT",
+  "topics": [
+   "agent",
+   "ai",
+   "automation",
+   "data-mining",
+   "data-science",
+   "development"
+  ],
+  "pushed_at": "2026-10-21",
+  "created_at": "2024-04",
+  "archived": false,
+  "open_issues": 250
  },
  {
   "full_name": "microsoft/semantic-kernel",
@@ -818,6 +1166,26 @@
   "created_at": "2023-06",
   "archived": false,
   "open_issues": 348
+ },
+ {
+  "full_name": "modelcontextprotocol/python-sdk",
+  "url": "https://github.com/modelcontextprotocol/python-sdk",
+  "homepage": "https://py.sdk.modelcontextprotocol.io/",
+  "desc": "The official Python SDK for Model Context Protocol servers and clients",
+  "stars": 24948,
+  "forks": 4166,
+  "lang": "Python",
+  "license": "MIT",
+  "topics": [
+   "mcp",
+   "mcp-client",
+   "mcp-server",
+   "python"
+  ],
+  "pushed_at": "2026-11-17",
+  "created_at": "2024-09",
+  "archived": false,
+  "open_issues": 432
  },
  {
   "full_name": "modelcontextprotocol/servers",
@@ -898,6 +1266,28 @@
   "created_at": "2025-07",
   "archived": false,
   "open_issues": 54379
+ },
+ {
+  "full_name": "onyx-dot-app/onyx",
+  "url": "https://github.com/onyx-dot-app/onyx",
+  "homepage": "https://onyx.app",
+  "desc": "Open Source AI Platform - AI Chat with advanced features that works with every LLM",
+  "stars": 33516,
+  "forks": 4771,
+  "lang": "Python",
+  "license": "NOASSERTION",
+  "topics": [
+   "ai",
+   "ai-chat",
+   "chatgpt",
+   "chatui",
+   "enterprise-search",
+   "gen-ai"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2023-04",
+  "archived": false,
+  "open_issues": 701
  },
  {
   "full_name": "openai/codex",
@@ -989,6 +1379,28 @@
   "open_issues": 0
  },
  {
+  "full_name": "pipecat-ai/pipecat",
+  "url": "https://github.com/pipecat-ai/pipecat",
+  "homepage": "https://pipecat.ai",
+  "desc": "Open Source framework for voice agents, multimodal apps, and realtime AI. Maintained by Daily and the community.",
+  "stars": 17401,
+  "forks": 3168,
+  "lang": "Python",
+  "license": "BSD-2-Clause",
+  "topics": [
+   "ai",
+   "chatbot-framework",
+   "chatbots",
+   "real-time",
+   "voice",
+   "voice-assistant"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2023-12",
+  "archived": false,
+  "open_issues": 563
+ },
+ {
   "full_name": "PrefectHQ/fastmcp",
   "url": "https://github.com/PrefectHQ/fastmcp",
   "homepage": "",
@@ -1039,6 +1451,28 @@
   "created_at": "2023-09",
   "archived": false,
   "open_issues": 666
+ },
+ {
+  "full_name": "QwenLM/qwen-code",
+  "url": "https://github.com/QwenLM/qwen-code",
+  "homepage": "https://qwenlm.github.io/qwen-code-docs/en/users/overview",
+  "desc": "An open-source AI coding agent that lives in your terminal.",
+  "stars": 30903,
+  "forks": 3575,
+  "lang": "TypeScript",
+  "license": "Apache-2.0",
+  "topics": [
+   "agentic",
+   "ai",
+   "ai-agent",
+   "ai-coding",
+   "cli",
+   "coding-agent"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2025-06",
+  "archived": false,
+  "open_issues": 2548
  },
  {
   "full_name": "reworkd/AgentGPT",
@@ -1122,6 +1556,28 @@
   "open_issues": 835
  },
  {
+  "full_name": "simular-ai/Agent-S",
+  "url": "https://github.com/simular-ai/Agent-S",
+  "homepage": "https://www.simular.ai",
+  "desc": "Agent S: the state-of-the-art open source computer use agents",
+  "stars": 13028,
+  "forks": 1525,
+  "lang": "Python",
+  "license": "Apache-2.0",
+  "topics": [
+   "agent-computer-interface",
+   "ai-agents",
+   "computer-automation",
+   "computer-use",
+   "computer-use-agent",
+   "cua"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2024-10",
+  "archived": false,
+  "open_issues": 83
+ },
+ {
   "full_name": "Skyvern-AI/skyvern",
   "url": "https://github.com/Skyvern-AI/skyvern",
   "homepage": "https://www.skyvern.com",
@@ -1166,6 +1622,50 @@
   "open_issues": 121
  },
  {
+  "full_name": "strands-agents/harness-sdk",
+  "url": "https://github.com/strands-agents/harness-sdk",
+  "homepage": "http://strandsagents.com/",
+  "desc": "Build an agent harness and control it end-to-end. Open-source SDK for production AI agents in Python & TypeScript - any model, any cloud.",
+  "stars": 9279,
+  "forks": 1559,
+  "lang": "TypeScript",
+  "license": "Apache-2.0",
+  "topics": [
+   "agent-framework",
+   "agentic",
+   "agentic-ai",
+   "agents",
+   "ai",
+   "ai-agents"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2025-05",
+  "archived": false,
+  "open_issues": 1365
+ },
+ {
+  "full_name": "supermemoryai/supermemory",
+  "url": "https://github.com/supermemoryai/supermemory",
+  "homepage": "https://supermemory.ai/docs",
+  "desc": "Memory and context engine + app that is extremely fast, scalable, and can be run fully locally. The Memory API for the AI era.",
+  "stars": 31701,
+  "forks": 2781,
+  "lang": "TypeScript",
+  "license": "MIT",
+  "topics": [
+   "agent-memory",
+   "ai-memory",
+   "cloudflare-kv",
+   "cloudflare-pages",
+   "cloudflare-workers",
+   "drizzle-orm"
+  ],
+  "pushed_at": "2026-11-24",
+  "created_at": "2024-02",
+  "archived": false,
+  "open_issues": 68
+ },
+ {
   "full_name": "SWE-agent/SWE-agent",
   "url": "https://github.com/SWE-agent/SWE-agent",
   "homepage": "https://swe-agent.com",
@@ -1186,6 +1686,70 @@
   "created_at": "2024-04",
   "archived": false,
   "open_issues": 221
+ },
+ {
+  "full_name": "topoteretes/cognee",
+  "url": "https://github.com/topoteretes/cognee",
+  "homepage": "https://www.cognee.ai",
+  "desc": "Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free",
+  "stars": 33528,
+  "forks": 3548,
+  "lang": "Python",
+  "license": "Apache-2.0",
+  "topics": [
+   "agent-memory",
+   "agent-skills",
+   "ai",
+   "ai-agents",
+   "ai-memory",
+   "cognitive-architecture"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2023-08",
+  "archived": false,
+  "open_issues": 1125
+ },
+ {
+  "full_name": "upstash/context7",
+  "url": "https://github.com/upstash/context7",
+  "homepage": "https://context7.com",
+  "desc": "Context7 Platform -- Up-to-date docs for AI agents",
+  "stars": 65351,
+  "forks": 3267,
+  "lang": "TypeScript",
+  "license": "MIT",
+  "topics": [
+   "llm",
+   "mcp",
+   "mcp-server",
+   "vibe-coding"
+  ],
+  "pushed_at": "2026-11-23",
+  "created_at": "2025-03",
+  "archived": false,
+  "open_issues": 54
+ },
+ {
+  "full_name": "VoltAgent/voltagent",
+  "url": "https://github.com/VoltAgent/voltagent",
+  "homepage": "https://voltagent.dev",
+  "desc": "AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework",
+  "stars": 11006,
+  "forks": 1216,
+  "lang": "TypeScript",
+  "license": "MIT",
+  "topics": [
+   "agents",
+   "ai",
+   "ai-agents",
+   "ai-agents-framework",
+   "aiagentframework",
+   "chatbots"
+  ],
+  "pushed_at": "2026-11-06",
+  "created_at": "2025-04",
+  "archived": false,
+  "open_issues": 195
  },
  {
   "full_name": "web-infra-dev/midscene",

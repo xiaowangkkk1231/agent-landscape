@@ -104,25 +104,25 @@ footer p+p{margin-top:7px}
 <div class="toolbar">
   <div class="tb-in">
     <input id="q" type="search" placeholder="搜索项目名 / 定位 / 场景，例如：浏览器、RAG、多智能体…">
-    <select id="lang"><option value="">全部语言</option><option value="Python">Python (37)</option><option value="TypeScript">TypeScript (17)</option><option value="Rust">Rust (2)</option><option value="Go">Go (1)</option><option value="JavaScript">JavaScript (1)</option><option value="C#">C# (1)</option></select>
+    <select id="lang"><option value="">全部语言</option><option value="Python">Python (50)</option><option value="TypeScript">TypeScript (28)</option><option value="Go">Go (3)</option><option value="Rust">Rust (2)</option><option value="C#">C# (1)</option><option value="Jupyter Notebook">Jupyter Notebook (1)</option><option value="JavaScript">JavaScript (1)</option><option value="-">- (1)</option></select>
     <select id="sort">
       <option value="stars">按星数排序</option>
       <option value="upd">按最近更新</option>
     </select>
   </div>
-  <div class="chips"><button class="chip on" data-cat="all">全部<i>60</i></button><button class="chip" data-cat="framework">编排框架 / SDK<i>13</i></button><button class="chip" data-cat="platform">低代码平台 / 工作流<i>6</i></button><button class="chip" data-cat="coding">编码 Agent<i>11</i></button><button class="chip" data-cat="auto">通用自主 Agent<i>5</i></button><button class="chip" data-cat="multi">多智能体协作<i>4</i></button><button class="chip" data-cat="browser">浏览器操作<i>5</i></button><button class="chip" data-cat="desktop">桌面 / 电脑操作<i>4</i></button><button class="chip" data-cat="research">深度研究 / 检索<i>3</i></button><button class="chip" data-cat="knowledge">知识库 / RAG<i>4</i></button><button class="chip" data-cat="memory">记忆层<i>2</i></button><button class="chip" data-cat="infra">Agent 基础设施<i>1</i></button><button class="chip" data-cat="protocol">工具协议 / MCP<i>2</i></button></div>
+  <div class="chips"><button class="chip on" data-cat="all">全部<i>87</i></button><button class="chip" data-cat="framework">编排框架 / SDK<i>16</i></button><button class="chip" data-cat="platform">低代码平台 / 工作流<i>6</i></button><button class="chip" data-cat="coding">编码 Agent<i>14</i></button><button class="chip" data-cat="auto">通用自主 Agent<i>6</i></button><button class="chip" data-cat="multi">多智能体协作<i>4</i></button><button class="chip" data-cat="browser">浏览器操作<i>5</i></button><button class="chip" data-cat="desktop">桌面 / 电脑操作<i>6</i></button><button class="chip" data-cat="voice">语音 Agent<i>2</i></button><button class="chip" data-cat="research">深度研究 / 检索<i>5</i></button><button class="chip" data-cat="knowledge">知识库 / RAG<i>6</i></button><button class="chip" data-cat="memory">记忆层<i>5</i></button><button class="chip" data-cat="protocol">工具协议 / MCP<i>7</i></button><button class="chip" data-cat="eval">Agent 可观测 / 评测<i>4</i></button><button class="chip" data-cat="infra">Agent 基础设施<i>1</i></button></div>
 </div>
 
 <div class="wrap">
 <header>
   <div class="kicker">GitHub Agent Landscape · 2026-11-24</div>
   <h1>GitHub 上的 Agent 项目，<em>一张图看懂</em></h1>
-  <p class="lede">从底层编排框架到能自己写代码、开浏览器、做深度调研的成品 Agent，60 个项目按 12 个赛道归类。星数、语言、许可证、维护状态取自 GitHub 官方 API，中文定位与选型建议为人工标注。</p>
+  <p class="lede">从底层编排框架到能自己写代码、开浏览器、做深度调研的成品 Agent，87 个项目按 14 个赛道归类。星数、语言、许可证、维护状态取自 GitHub 官方 API，中文定位与选型建议为人工标注。</p>
   <div class="stats">
-    <div class="stat"><b>60</b><span>收录项目</span></div>
-    <div class="stat"><b>374.8万</b><span>累计星标</span></div>
-    <div class="stat"><b>12</b><span>赛道分类</span></div>
-    <div class="stat"><b>50</b><span>近 45 天有提交</span></div>
+    <div class="stat"><b>87</b><span>收录项目</span></div>
+    <div class="stat"><b>465.7万</b><span>累计星标</span></div>
+    <div class="stat"><b>14</b><span>赛道分类</span></div>
+    <div class="stat"><b>74</b><span>近 45 天有提交</span></div>
   </div>
 </header>
 
@@ -130,7 +130,7 @@ footer p+p{margin-top:7px}
     <div class="group-head">
       <h2>编排框架 / SDK</h2>
       <span class="gsub">搭 Agent 的底层骨架</span>
-      <span class="gcount"><b class="gc-n">13</b> 个项目 · ★ 59.3万</span>
+      <span class="gcount"><b class="gc-n">16</b> 个项目 · ★ 64.3万</span>
     </div>
     <div class="grid">
     <article class="card" data-cat="framework" data-lang="Python"
@@ -293,6 +293,26 @@ footer p+p{margin-top:7px}
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
+    <article class="card" data-cat="framework" data-lang="TypeScript"
+             data-name="mastra-ai/mastra TypeScript 原生的 Agent 框架，工作流 / RAG / 评测一体 用 TS 做产品的团队 Gatsby 团队出品，agent + workflow + eval 装在一个包里，JS 生态少见的完整方案。 agents ai chatbots evals javascript llm"
+             data-stars="29771" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/mastra-ai/mastra" target="_blank" rel="noopener">
+          <span class="owner">mastra-ai/</span><span class="name">mastra</span>
+        </a>
+        <span class="stars" title="29,771 stars">★ 3万</span>
+      </div>
+      <h3 class="pitch">TypeScript 原生的 Agent 框架，工作流 / RAG / 评测一体</h3>
+      <p class="note">Gatsby 团队出品，agent + workflow + eval 装在一个包里，JS 生态少见的完整方案。</p>
+      <div class="fit"><span class="fitk">适合</span>用 TS 做产品的团队</div>
+      <div class="topics"><span>⑂ Fork 3.1k</span><span>创建于 2024-08</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT+企业版</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
     <article class="card" data-cat="framework" data-lang="C#"
              data-name="microsoft/semantic-kernel 微软企业级 SDK，.NET / Python / Java 三语 .NET 技术栈或企业内网落地 与 Azure/AI Foundry 打通最顺，纯 Python 团队用它会觉得偏重。 ai artificial-intelligence llm openai sdk"
              data-stars="28794" data-upd="2026-11-23">
@@ -391,6 +411,46 @@ footer p+p{margin-top:7px}
         <span class="meta-item">Apache-2.0</span>
         <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
         <span class="meta-item upd"><span class="s s-off">沉寂</span>2026-03-04</span>
+      </div>
+    </article>
+    <article class="card" data-cat="framework" data-lang="TypeScript"
+             data-name="voltagent/voltagent 带可视化调试台的 TypeScript Agent 平台 想要开箱就有 trace 的 TS 团队 框架 + Console 一体，跑起来就能看每条执行轨迹；生态比 Mastra 小一圈。 agents ai ai-agents ai-agents-framework aiagentframework chatbots"
+             data-stars="11006" data-upd="2026-11-06">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/VoltAgent/voltagent" target="_blank" rel="noopener">
+          <span class="owner">VoltAgent/</span><span class="name">voltagent</span>
+        </a>
+        <span class="stars" title="11,006 stars">★ 1.1万</span>
+      </div>
+      <h3 class="pitch">带可视化调试台的 TypeScript Agent 平台</h3>
+      <p class="note">框架 + Console 一体，跑起来就能看每条执行轨迹；生态比 Mastra 小一圈。</p>
+      <div class="fit"><span class="fitk">适合</span>想要开箱就有 trace 的 TS 团队</div>
+      <div class="topics"><span>⑂ Fork 1.2k</span><span>创建于 2025-04</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-06</span>
+      </div>
+    </article>
+    <article class="card" data-cat="framework" data-lang="TypeScript"
+             data-name="strands-agents/harness-sdk AWS 的 model-driven Agent SDK 要在 AWS 上落生产的团队 Python / TypeScript 双语言，把「让模型自己决定调什么工具」当第一性原理；Bedrock 集成是加分项。 agent-framework agentic agentic-ai agents ai ai-agents"
+             data-stars="9279" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/strands-agents/harness-sdk" target="_blank" rel="noopener">
+          <span class="owner">strands-agents/</span><span class="name">harness-sdk</span>
+        </a>
+        <span class="stars" title="9,279 stars">★ 9,279</span>
+      </div>
+      <h3 class="pitch">AWS 的 model-driven Agent SDK</h3>
+      <p class="note">Python / TypeScript 双语言，把「让模型自己决定调什么工具」当第一性原理；Bedrock 集成是加分项。</p>
+      <div class="fit"><span class="fitk">适合</span>要在 AWS 上落生产的团队</div>
+      <div class="topics"><span>⑂ Fork 1.6k</span><span>创建于 2025-05</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
     </div>
@@ -528,9 +588,29 @@ footer p+p{margin-top:7px}
     <div class="group-head">
       <h2>编码 Agent</h2>
       <span class="gsub">写代码、改仓库、跑测试</span>
-      <span class="gcount"><b class="gc-n">11</b> 个项目 · ★ 81.2万</span>
+      <span class="gcount"><b class="gc-n">14</b> 个项目 · ★ 110.1万</span>
     </div>
     <div class="grid">
+    <article class="card" data-cat="coding" data-lang="TypeScript"
+             data-name="anomalyco/opencode 开源终端编码 Agent 里最热的那个 想摆脱闭源 CLI 限制的开发者 MIT、模型 provider 无关，随便换；star 已超过大多数闭源对手，代价是接口变得快。 agent"
+             data-stars="228818" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">
+          <span class="owner">anomalyco/</span><span class="name">opencode</span>
+        </a>
+        <span class="stars" title="228,818 stars">★ 22.9万</span>
+      </div>
+      <h3 class="pitch">开源终端编码 Agent 里最热的那个</h3>
+      <p class="note">MIT、模型 provider 无关，随便换；star 已超过大多数闭源对手，代价是接口变得快。</p>
+      <div class="fit"><span class="fitk">适合</span>想摆脱闭源 CLI 限制的开发者</div>
+      <div class="topics"><span>⑂ Fork 3.1万</span><span>创建于 2025-04</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
     <article class="card" data-cat="coding" data-lang="TypeScript"
              data-name="anthropics/claude-code 终端里的编码 Agent 标杆 日常写代码、重构、跑测试 本项目仓库主要放文档与 issue，闭源分发但当前综合体验最强。 "
              data-stars="156801" data-upd="2026-11-23">
@@ -712,6 +792,46 @@ footer p+p{margin-top:7px}
       </div>
     </article>
     <article class="card" data-cat="coding" data-lang="TypeScript"
+             data-name="qwenlm/qwen-code 通义千问官方的终端编码 Agent 想用国内模型跑终端 Agent 的团队 Gemini CLI 血统改造而来，Qwen 模型上下文给得大方，国内网络友好。 agentic ai ai-agent ai-coding cli coding-agent"
+             data-stars="30903" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/QwenLM/qwen-code" target="_blank" rel="noopener">
+          <span class="owner">QwenLM/</span><span class="name">qwen-code</span>
+        </a>
+        <span class="stars" title="30,903 stars">★ 3.1万</span>
+      </div>
+      <h3 class="pitch">通义千问官方的终端编码 Agent</h3>
+      <p class="note">Gemini CLI 血统改造而来，Qwen 模型上下文给得大方，国内网络友好。</p>
+      <div class="fit"><span class="fitk">适合</span>想用国内模型跑终端 Agent 的团队</div>
+      <div class="topics"><span>⑂ Fork 3.6k</span><span>创建于 2025-06</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
+    <article class="card" data-cat="coding" data-lang="Go"
+             data-name="charmbracelet/crush Go 写的终端编码 Agent，TUI 手感最好 喜欢轻量单文件 TUI 的人 Charm 团队出品，界面延续 bubbletea 那套审美；插件生态小，胜在体验。 agentic-ai ai llms ravishing"
+             data-stars="29176" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/charmbracelet/crush" target="_blank" rel="noopener">
+          <span class="owner">charmbracelet/</span><span class="name">crush</span>
+        </a>
+        <span class="stars" title="29,176 stars">★ 2.9万</span>
+      </div>
+      <h3 class="pitch">Go 写的终端编码 Agent，TUI 手感最好</h3>
+      <p class="note">Charm 团队出品，界面延续 bubbletea 那套审美；插件生态小，胜在体验。</p>
+      <div class="fit"><span class="fitk">适合</span>喜欢轻量单文件 TUI 的人</div>
+      <div class="topics"><span>⑂ Fork 2.4k</span><span>创建于 2025-05</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#00ADD8"></i>Go</span>
+        <span class="meta-item">FSL-1.1-MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
+    <article class="card" data-cat="coding" data-lang="TypeScript"
              data-name="roocodeinc/roo-code Cline 分支，按「架构/编码/调试」切模式 喜欢角色化 prompt 的开发者 多模式设计让不同任务用不同系统提示，社区活跃。 "
              data-stars="24237" data-upd="2026-05-15">
       <div class="card-top">
@@ -757,7 +877,7 @@ footer p+p{margin-top:7px}
     <div class="group-head">
       <h2>通用自主 Agent</h2>
       <span class="gsub">给个目标自己拆解执行</span>
-      <span class="gcount"><b class="gc-n">5</b> 个项目 · ★ 56.9万</span>
+      <span class="gcount"><b class="gc-n">6</b> 个项目 · ★ 61.9万</span>
     </div>
     <div class="grid">
     <article class="card" data-cat="auto" data-lang="Python"
@@ -818,6 +938,26 @@ footer p+p{margin-top:7px}
         <span class="meta-item">MIT</span>
         <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-02</span>
+      </div>
+    </article>
+    <article class="card" data-cat="auto" data-lang="Python"
+             data-name="hkuds/nanobot 轻量个人 Agent，装完就能干活 想在自己机器上养个常驻小 Agent 港大 HKUDS 出品，主打小而全：工具、记忆、定时任务都有；工程完整度还追不上 Hermes。 agent-framework ai-agent ai-agents chatbot chatops discord-bot"
+             data-stars="50290" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/HKUDS/nanobot" target="_blank" rel="noopener">
+          <span class="owner">HKUDS/</span><span class="name">nanobot</span>
+        </a>
+        <span class="stars" title="50,290 stars">★ 5万</span>
+      </div>
+      <h3 class="pitch">轻量个人 Agent，装完就能干活</h3>
+      <p class="note">港大 HKUDS 出品，主打小而全：工具、记忆、定时任务都有；工程完整度还追不上 Hermes。</p>
+      <div class="fit"><span class="fitk">适合</span>想在自己机器上养个常驻小 Agent</div>
+      <div class="topics"><span>⑂ Fork 8.8k</span><span>创建于 2026-02</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
     <article class="card" data-cat="auto" data-lang="TypeScript"
@@ -1064,7 +1204,7 @@ footer p+p{margin-top:7px}
     <div class="group-head">
       <h2>桌面 / 电脑操作</h2>
       <span class="gsub">看屏幕、动鼠标、控本机</span>
-      <span class="gcount"><b class="gc-n">4</b> 个项目 · ★ 13.4万</span>
+      <span class="gcount"><b class="gc-n">6</b> 个项目 · ★ 17.3万</span>
     </div>
     <div class="grid">
     <article class="card" data-cat="desktop" data-lang="Python"
@@ -1107,6 +1247,26 @@ footer p+p{margin-top:7px}
         <span class="meta-item upd"><span class="s s-mid">维护中</span>2026-10-09</span>
       </div>
     </article>
+    <article class="card" data-cat="desktop" data-lang="Jupyter Notebook"
+             data-name="microsoft/omniparser 把屏幕截图解析成可点元素的视觉解析器 自建 GUI Agent、需要屏幕理解的 纯视觉路线的基础件，通常配 VLM 一起用；它不是成品 Agent，是给 Agent 装眼睛。 agent"
+             data-stars="25634" data-upd="2026-11-14">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/microsoft/OmniParser" target="_blank" rel="noopener">
+          <span class="owner">microsoft/</span><span class="name">OmniParser</span>
+        </a>
+        <span class="stars" title="25,634 stars">★ 2.6万</span>
+      </div>
+      <h3 class="pitch">把屏幕截图解析成可点元素的视觉解析器</h3>
+      <p class="note">纯视觉路线的基础件，通常配 VLM 一起用；它不是成品 Agent，是给 Agent 装眼睛。</p>
+      <div class="fit"><span class="fitk">适合</span>自建 GUI Agent、需要屏幕理解的</div>
+      <div class="topics"><span>⑂ Fork 2.2k</span><span>创建于 2024-09</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#DA5B0B"></i>Jupyter Notebook</span>
+        <span class="meta-item">CC-BY-4.0</span>
+        <span class="meta-item diff">门槛 <b>难</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot on"></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-14</span>
+      </div>
+    </article>
     <article class="card" data-cat="desktop" data-lang="TypeScript"
              data-name="web-infra-dev/midscene 自然语言驱动的 UI 自动化 前端团队做 E2E 与 AI 自动化 国内团队出品，中文文档好，与 Playwright/Puppeteer 结合紧。 browser-use computer-use e2e-testing gpt-operator gui-agent javascript"
              data-stars="15723" data-upd="2026-11-23">
@@ -1124,6 +1284,26 @@ footer p+p{margin-top:7px}
         <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
         <span class="meta-item">MIT</span>
         <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="desktop" data-lang="Python"
+             data-name="simular-ai/agent-s 开源 computer-use Agent 的 SOTA 实现 研究电脑操作 Agent 上限的 论文同源实现，benchmark 成绩在开源里属最好一档；跑通要配模型、配环境。 agent-computer-interface ai-agents computer-automation computer-use computer-use-agent cua"
+             data-stars="13028" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/simular-ai/Agent-S" target="_blank" rel="noopener">
+          <span class="owner">simular-ai/</span><span class="name">Agent-S</span>
+        </a>
+        <span class="stars" title="13,028 stars">★ 1.3万</span>
+      </div>
+      <h3 class="pitch">开源 computer-use Agent 的 SOTA 实现</h3>
+      <p class="note">论文同源实现，benchmark 成绩在开源里属最好一档；跑通要配模型、配环境。</p>
+      <div class="fit"><span class="fitk">适合</span>研究电脑操作 Agent 上限的</div>
+      <div class="topics"><span>⑂ Fork 1.5k</span><span>创建于 2024-10</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>难</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot on"></i></span></span>
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
@@ -1149,11 +1329,60 @@ footer p+p{margin-top:7px}
     </article>
     </div>
   </section>
+  <section class="group" data-cat="voice">
+    <div class="group-head">
+      <h2>语音 Agent</h2>
+      <span class="gsub">能听会说的实时对话</span>
+      <span class="gcount"><b class="gc-n">2</b> 个项目 · ★ 3.3万</span>
+    </div>
+    <div class="grid">
+    <article class="card" data-cat="voice" data-lang="Python"
+             data-name="pipecat-ai/pipecat 实时语音 Agent 的管线框架 做语音对话产品的 把 STT / LLM / TTS 串成实时管线，延迟可控；各家模型要自己接。 ai chatbot-framework chatbots real-time voice voice-assistant"
+             data-stars="17401" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/pipecat-ai/pipecat" target="_blank" rel="noopener">
+          <span class="owner">pipecat-ai/</span><span class="name">pipecat</span>
+        </a>
+        <span class="stars" title="17,401 stars">★ 1.7万</span>
+      </div>
+      <h3 class="pitch">实时语音 Agent 的管线框架</h3>
+      <p class="note">把 STT / LLM / TTS 串成实时管线，延迟可控；各家模型要自己接。</p>
+      <div class="fit"><span class="fitk">适合</span>做语音对话产品的</div>
+      <div class="topics"><span>⑂ Fork 3.2k</span><span>创建于 2023-12</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">BSD-2-Clause</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="voice" data-lang="Python"
+             data-name="livekit/agents LiveKit 的实时语音 Agent 框架 已有 LiveKit 音视频链路的 WebRTC 底子扎实，打断与回声处理成熟；脱离 LiveKit 生态收益变小。 agents ai openai real-time video voice"
+             data-stars="15317" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/livekit/agents" target="_blank" rel="noopener">
+          <span class="owner">livekit/</span><span class="name">agents</span>
+        </a>
+        <span class="stars" title="15,317 stars">★ 1.5万</span>
+      </div>
+      <h3 class="pitch">LiveKit 的实时语音 Agent 框架</h3>
+      <p class="note">WebRTC 底子扎实，打断与回声处理成熟；脱离 LiveKit 生态收益变小。</p>
+      <div class="fit"><span class="fitk">适合</span>已有 LiveKit 音视频链路的</div>
+      <div class="topics"><span>⑂ Fork 4.2k</span><span>创建于 2023-10</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
+    </div>
+  </section>
   <section class="group" data-cat="research">
     <div class="group-head">
       <h2>深度研究 / 检索</h2>
       <span class="gsub">自动调研并产出报告</span>
-      <span class="gcount"><b class="gc-n">3</b> 个项目 · ★ 14.8万</span>
+      <span class="gcount"><b class="gc-n">5</b> 个项目 · ★ 17.7万</span>
     </div>
     <div class="grid">
     <article class="card" data-cat="research" data-lang="Python"
@@ -1216,13 +1445,53 @@ footer p+p{margin-top:7px}
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
+    <article class="card" data-cat="research" data-lang="Python"
+             data-name="microsoft/rd-agent 微软的研发自动化 Agent 想自动化实验 / 调参流程的 把「提假设 - 写代码 - 跑实验 - 复盘」做成闭环，场景偏数据科学；接入成本高。 agent ai automation data-mining data-science development"
+             data-stars="15466" data-upd="2026-10-21">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/microsoft/RD-Agent" target="_blank" rel="noopener">
+          <span class="owner">microsoft/</span><span class="name">RD-Agent</span>
+        </a>
+        <span class="stars" title="15,466 stars">★ 1.5万</span>
+      </div>
+      <h3 class="pitch">微软的研发自动化 Agent</h3>
+      <p class="note">把「提假设 - 写代码 - 跑实验 - 复盘」做成闭环，场景偏数据科学；接入成本高。</p>
+      <div class="fit"><span class="fitk">适合</span>想自动化实验 / 调参流程的</div>
+      <div class="topics"><span>⑂ Fork 2.1k</span><span>创建于 2024-04</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>难</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot on"></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-10-21</span>
+      </div>
+    </article>
+    <article class="card" data-cat="research" data-lang="Python"
+             data-name="langchain-ai/open_deep_research LangChain 官方的开源深度研究实现 要二次开发研究型 Agent 的 基于 LangGraph，结构清晰好改；近期更新放缓。 agent"
+             data-stars="12672" data-upd="2026-08-10">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/langchain-ai/open_deep_research" target="_blank" rel="noopener">
+          <span class="owner">langchain-ai/</span><span class="name">open_deep_research</span>
+        </a>
+        <span class="stars" title="12,672 stars">★ 1.3万</span>
+      </div>
+      <h3 class="pitch">LangChain 官方的开源深度研究实现</h3>
+      <p class="note">基于 LangGraph，结构清晰好改；近期更新放缓。</p>
+      <div class="fit"><span class="fitk">适合</span>要二次开发研究型 Agent 的</div>
+      <div class="topics"><span>⑂ Fork 1.9k</span><span>创建于 2024-11</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-mid">维护中</span>2026-08-10</span>
+      </div>
+    </article>
     </div>
   </section>
   <section class="group" data-cat="knowledge">
     <div class="group-head">
       <h2>知识库 / RAG</h2>
       <span class="gsub">把私域文档变成 Agent 的上下文</span>
-      <span class="gcount"><b class="gc-n">4</b> 个项目 · ★ 24.1万</span>
+      <span class="gcount"><b class="gc-n">6</b> 个项目 · ★ 31.2万</span>
     </div>
     <div class="grid">
     <article class="card" data-cat="knowledge" data-lang="Go"
@@ -1286,6 +1555,26 @@ footer p+p{margin-top:7px}
       </div>
     </article>
     <article class="card" data-cat="knowledge" data-lang="Python"
+             data-name="khoj-ai/khoj 自托管的个人第二大脑 想自建个人知识助手 文档 / 邮件 / 网页都能进来，支持本地模型；近几个月没提交，节奏慢下来了。 agent ai assistant chat chatgpt emacs"
+             data-stars="38221" data-upd="2026-08-02">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/khoj-ai/khoj" target="_blank" rel="noopener">
+          <span class="owner">khoj-ai/</span><span class="name">khoj</span>
+        </a>
+        <span class="stars" title="38,221 stars">★ 3.8万</span>
+      </div>
+      <h3 class="pitch">自托管的个人第二大脑</h3>
+      <p class="note">文档 / 邮件 / 网页都能进来，支持本地模型；近几个月没提交，节奏慢下来了。</p>
+      <div class="fit"><span class="fitk">适合</span>想自建个人知识助手</div>
+      <div class="topics"><span>⑂ Fork 2.6k</span><span>创建于 2021-08</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">AGPL-3.0</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-mid">维护中</span>2026-08-02</span>
+      </div>
+    </article>
+    <article class="card" data-cat="knowledge" data-lang="Python"
              data-name="microsoft/graphrag 知识图谱式 RAG（GraphRAG） 全局性问题、跨文档关系推理 建图成本高（token 消耗大），适合高价值语料。 gpt gpt-4 gpt4 graphrag llm llms"
              data-stars="36727" data-upd="2026-11-23">
       <div class="card-top">
@@ -1305,13 +1594,33 @@ footer p+p{margin-top:7px}
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
+    <article class="card" data-cat="knowledge" data-lang="Python"
+             data-name="onyx-dot-app/onyx 企业级知识问答平台（原 Danswer） 企业内网知识库 + 问答 连接器多、权限体系完整，适合内部部署；部署组件偏重。 ai ai-chat chatgpt chatui enterprise-search gen-ai"
+             data-stars="33516" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/onyx-dot-app/onyx" target="_blank" rel="noopener">
+          <span class="owner">onyx-dot-app/</span><span class="name">onyx</span>
+        </a>
+        <span class="stars" title="33,516 stars">★ 3.4万</span>
+      </div>
+      <h3 class="pitch">企业级知识问答平台（原 Danswer）</h3>
+      <p class="note">连接器多、权限体系完整，适合内部部署；部署组件偏重。</p>
+      <div class="fit"><span class="fitk">适合</span>企业内网知识库 + 问答</div>
+      <div class="topics"><span>⑂ Fork 4.8k</span><span>创建于 2023-04</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">MIT+企业版</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
     </div>
   </section>
   <section class="group" data-cat="memory">
     <div class="group-head">
       <h2>记忆层</h2>
       <span class="gsub">跨会话记住人和事</span>
-      <span class="gcount"><b class="gc-n">2</b> 个项目 · ★ 9.5万</span>
+      <span class="gcount"><b class="gc-n">5</b> 个项目 · ★ 17.3万</span>
     </div>
     <div class="grid">
     <article class="card" data-cat="memory" data-lang="Python"
@@ -1334,6 +1643,46 @@ footer p+p{margin-top:7px}
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
       </div>
     </article>
+    <article class="card" data-cat="memory" data-lang="Python"
+             data-name="topoteretes/cognee 把文档变成 Agent 的图谱记忆 需要长程记忆 + 知识图谱的 ETL 式建图，记忆可查可改；偏工程化，配置项不少。 agent-memory agent-skills ai ai-agents ai-memory cognitive-architecture"
+             data-stars="33528" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/topoteretes/cognee" target="_blank" rel="noopener">
+          <span class="owner">topoteretes/</span><span class="name">cognee</span>
+        </a>
+        <span class="stars" title="33,528 stars">★ 3.4万</span>
+      </div>
+      <h3 class="pitch">把文档变成 Agent 的图谱记忆</h3>
+      <p class="note">ETL 式建图，记忆可查可改；偏工程化，配置项不少。</p>
+      <div class="fit"><span class="fitk">适合</span>需要长程记忆 + 知识图谱的</div>
+      <div class="topics"><span>⑂ Fork 3.5k</span><span>创建于 2023-08</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="memory" data-lang="TypeScript"
+             data-name="supermemoryai/supermemory 高速记忆 / 上下文引擎，带托管 API 要现成记忆 API 的产品团队 以服务形态提供，接入省事；自托管版本比 SaaS 弱。 agent-memory ai-memory cloudflare-kv cloudflare-pages cloudflare-workers drizzle-orm"
+             data-stars="31701" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/supermemoryai/supermemory" target="_blank" rel="noopener">
+          <span class="owner">supermemoryai/</span><span class="name">supermemory</span>
+        </a>
+        <span class="stars" title="31,701 stars">★ 3.2万</span>
+      </div>
+      <h3 class="pitch">高速记忆 / 上下文引擎，带托管 API</h3>
+      <p class="note">以服务形态提供，接入省事；自托管版本比 SaaS 弱。</p>
+      <div class="fit"><span class="fitk">适合</span>要现成记忆 API 的产品团队</div>
+      <div class="topics"><span>⑂ Fork 2.8k</span><span>创建于 2024-02</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
     <article class="card" data-cat="memory" data-lang="-"
              data-name="letta-ai/letta 有状态 Agent 服务，自管理记忆（原 MemGPT） 需要长期人格与记忆的 Agent 把记忆当操作系统管，思路漂亮，资源开销偏高。 ai ai-agents llm llm-agent"
              data-stars="25520" data-upd="2026-10-18">
@@ -1352,6 +1701,264 @@ footer p+p{margin-top:7px}
         <span class="meta-item">Apache-2.0</span>
         <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
         <span class="meta-item upd"><span class="s s-on">活跃</span>2026-10-18</span>
+      </div>
+    </article>
+    <article class="card" data-cat="memory" data-lang="TypeScript"
+             data-name="memtensor/memos 给 Agent 用的「记忆操作系统」 想在记忆层做研究或定制的 上海交大团队，记忆调度与生命周期管理做得细；偏学术，落地要自己接。 agent agentic-ai ai ai-agents chatgpt claude"
+             data-stars="12489" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/MemTensor/MemOS" target="_blank" rel="noopener">
+          <span class="owner">MemTensor/</span><span class="name">MemOS</span>
+        </a>
+        <span class="stars" title="12,489 stars">★ 1.2万</span>
+      </div>
+      <h3 class="pitch">给 Agent 用的「记忆操作系统」</h3>
+      <p class="note">上海交大团队，记忆调度与生命周期管理做得细；偏学术，落地要自己接。</p>
+      <div class="fit"><span class="fitk">适合</span>想在记忆层做研究或定制的</div>
+      <div class="topics"><span>⑂ Fork 1.1k</span><span>创建于 2025-07</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="group" data-cat="protocol">
+    <div class="group-head">
+      <h2>工具协议 / MCP</h2>
+      <span class="gsub">给 Agent 装手脚的标准接口</span>
+      <span class="gcount"><b class="gc-n">7</b> 个项目 · ★ 31.6万</span>
+    </div>
+    <div class="grid">
+    <article class="card" data-cat="protocol" data-lang="TypeScript"
+             data-name="modelcontextprotocol/servers MCP 官方参考服务器合集 要给 Agent 接工具、接数据源 MCP 已成事实标准，这里是官方示范实现与最佳实践来源。 "
+             data-stars="92190" data-upd="2026-11-19">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener">
+          <span class="owner">modelcontextprotocol/</span><span class="name">servers</span>
+        </a>
+        <span class="stars" title="92,190 stars">★ 9.2万</span>
+      </div>
+      <h3 class="pitch">MCP 官方参考服务器合集</h3>
+      <p class="note">MCP 已成事实标准，这里是官方示范实现与最佳实践来源。</p>
+      <div class="fit"><span class="fitk">适合</span>要给 Agent 接工具、接数据源</div>
+      <div class="topics"><span>⑂ Fork 1.2万</span><span>创建于 2024-11</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">见仓库</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-19</span>
+      </div>
+    </article>
+    <article class="card" data-cat="protocol" data-lang="TypeScript"
+             data-name="upstash/context7 给 Agent 喂最新文档的 MCP 服务 受不了模型知识过期的 按库名拉版本化文档，接进 Cursor / Claude Code 就能用；索引依赖第三方托管。 llm mcp mcp-server vibe-coding"
+             data-stars="65351" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/upstash/context7" target="_blank" rel="noopener">
+          <span class="owner">upstash/</span><span class="name">context7</span>
+        </a>
+        <span class="stars" title="65,351 stars">★ 6.5万</span>
+      </div>
+      <h3 class="pitch">给 Agent 喂最新文档的 MCP 服务</h3>
+      <p class="note">按库名拉版本化文档，接进 Cursor / Claude Code 就能用；索引依赖第三方托管。</p>
+      <div class="fit"><span class="fitk">适合</span>受不了模型知识过期的</div>
+      <div class="topics"><span>⑂ Fork 3.3k</span><span>创建于 2025-03</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="protocol" data-lang="TypeScript"
+             data-name="chromedevtools/chrome-devtools-mcp 让 Agent 直接操控 Chrome DevTools 要让 Agent 查性能、网络、控制台的 官方维护，比纯 DOM 操作多一层运行时视角，调前端问题很顺手。 browser chrome chrome-devtools debugging devtools mcp"
+             data-stars="59036" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/ChromeDevTools/chrome-devtools-mcp" target="_blank" rel="noopener">
+          <span class="owner">ChromeDevTools/</span><span class="name">chrome-devtools-mcp</span>
+        </a>
+        <span class="stars" title="59,036 stars">★ 5.9万</span>
+      </div>
+      <h3 class="pitch">让 Agent 直接操控 Chrome DevTools</h3>
+      <p class="note">官方维护，比纯 DOM 操作多一层运行时视角，调前端问题很顺手。</p>
+      <div class="fit"><span class="fitk">适合</span>要让 Agent 查性能、网络、控制台的</div>
+      <div class="topics"><span>⑂ Fork 4.9k</span><span>创建于 2025-09</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="protocol" data-lang="Go"
+             data-name="github/github-mcp-server GitHub 官方 MCP Server 让 Agent 管 issue / PR / 代码搜索 官方出品，权限跟着 token 走；GitHub Enterprise 要额外配置。 github mcp mcp-server"
+             data-stars="34697" data-upd="2026-11-21">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/github/github-mcp-server" target="_blank" rel="noopener">
+          <span class="owner">github/</span><span class="name">github-mcp-server</span>
+        </a>
+        <span class="stars" title="34,697 stars">★ 3.5万</span>
+      </div>
+      <h3 class="pitch">GitHub 官方 MCP Server</h3>
+      <p class="note">官方出品，权限跟着 token 走；GitHub Enterprise 要额外配置。</p>
+      <div class="fit"><span class="fitk">适合</span>让 Agent 管 issue / PR / 代码搜索</div>
+      <div class="topics"><span>⑂ Fork 5.4k</span><span>创建于 2025-03</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#00ADD8"></i>Go</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-21</span>
+      </div>
+    </article>
+    <article class="card" data-cat="protocol" data-lang="Python"
+             data-name="prefecthq/fastmcp 用几行 Python 写一个 MCP Server 要把内部系统暴露给 Agent 装饰器风格，是目前写 MCP 服务最省心的库。 "
+             data-stars="28715" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/PrefectHQ/fastmcp" target="_blank" rel="noopener">
+          <span class="owner">PrefectHQ/</span><span class="name">fastmcp</span>
+        </a>
+        <span class="stars" title="28,715 stars">★ 2.9万</span>
+      </div>
+      <h3 class="pitch">用几行 Python 写一个 MCP Server</h3>
+      <p class="note">装饰器风格，是目前写 MCP 服务最省心的库。</p>
+      <div class="fit"><span class="fitk">适合</span>要把内部系统暴露给 Agent</div>
+      <div class="topics"><span>⑂ Fork 2.6k</span><span>创建于 2024-11</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="protocol" data-lang="Python"
+             data-name="modelcontextprotocol/python-sdk 自己写 MCP Server 的官方 Python SDK 要把内部系统接给 Agent 的 协议本体最权威的实现，配 FastMCP 更省事；只管协议层，不含 Agent 逻辑。 mcp mcp-client mcp-server python"
+             data-stars="24948" data-upd="2026-11-17">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/modelcontextprotocol/python-sdk" target="_blank" rel="noopener">
+          <span class="owner">modelcontextprotocol/</span><span class="name">python-sdk</span>
+        </a>
+        <span class="stars" title="24,948 stars">★ 2.5万</span>
+      </div>
+      <h3 class="pitch">自己写 MCP Server 的官方 Python SDK</h3>
+      <p class="note">协议本体最权威的实现，配 FastMCP 更省事；只管协议层，不含 Agent 逻辑。</p>
+      <div class="fit"><span class="fitk">适合</span>要把内部系统接给 Agent 的</div>
+      <div class="topics"><span>⑂ Fork 4.2k</span><span>创建于 2024-09</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-17</span>
+      </div>
+    </article>
+    <article class="card" data-cat="protocol" data-lang="TypeScript"
+             data-name="mcp-use/mcp-use 全栈 MCP 框架：MCP App 和 Server 一起做 要做带界面的 MCP App 的 把 MCP Server 和前端 UI 打包成一个工程，适合做可交互工具；公开案例还不多。 agent-plugins agentic-framework ai apps-sdk chatgpt claude-code"
+             data-stars="11003" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/mcp-use/mcp-use" target="_blank" rel="noopener">
+          <span class="owner">mcp-use/</span><span class="name">mcp-use</span>
+        </a>
+        <span class="stars" title="11,003 stars">★ 1.1万</span>
+      </div>
+      <h3 class="pitch">全栈 MCP 框架：MCP App 和 Server 一起做</h3>
+      <p class="note">把 MCP Server 和前端 UI 打包成一个工程，适合做可交互工具；公开案例还不多。</p>
+      <div class="fit"><span class="fitk">适合</span>要做带界面的 MCP App 的</div>
+      <div class="topics"><span>⑂ Fork 1.6k</span><span>创建于 2025-03</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
+    </div>
+  </section>
+  <section class="group" data-cat="eval">
+    <div class="group-head">
+      <h2>Agent 可观测 / 评测</h2>
+      <span class="gsub">看它在干什么、跑得好不好</span>
+      <span class="gcount"><b class="gc-n">4</b> 个项目 · ★ 7.6万</span>
+    </div>
+    <div class="grid">
+    <article class="card" data-cat="eval" data-lang="TypeScript"
+             data-name="langfuse/langfuse Agent 观测与评测的老牌平台 要给 Agent 上 trace 和评测的 自托管友好，trace / 数据集 / 评分一体；功能多，上手要花点时间。 ai-gateway analytics evaluation gateway langchain large-language-models"
+             data-stars="37765" data-upd="2026-11-23">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/langfuse/langfuse" target="_blank" rel="noopener">
+          <span class="owner">langfuse/</span><span class="name">langfuse</span>
+        </a>
+        <span class="stars" title="37,765 stars">★ 3.8万</span>
+      </div>
+      <h3 class="pitch">Agent 观测与评测的老牌平台</h3>
+      <p class="note">自托管友好，trace / 数据集 / 评分一体；功能多，上手要花点时间。</p>
+      <div class="fit"><span class="fitk">适合</span>要给 Agent 上 trace 和评测的</div>
+      <div class="topics"><span>⑂ Fork 4.3k</span><span>创建于 2023-05</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
+        <span class="meta-item">MIT+企业版</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
+      </div>
+    </article>
+    <article class="card" data-cat="eval" data-lang="Python"
+             data-name="confident-ai/deepeval 给 LLM / Agent 写单测的评测框架 想把评测塞进 CI 的 pytest 风格，常用指标开箱即用；复杂多轮场景得自己写 evaluator。 evaluation-framework evaluation-metrics llm-evaluation llm-evaluation-framework llm-evaluation-metrics python"
+             data-stars="19611" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/confident-ai/deepeval" target="_blank" rel="noopener">
+          <span class="owner">confident-ai/</span><span class="name">deepeval</span>
+        </a>
+        <span class="stars" title="19,611 stars">★ 2万</span>
+      </div>
+      <h3 class="pitch">给 LLM / Agent 写单测的评测框架</h3>
+      <p class="note">pytest 风格，常用指标开箱即用；复杂多轮场景得自己写 evaluator。</p>
+      <div class="fit"><span class="fitk">适合</span>想把评测塞进 CI 的</div>
+      <div class="topics"><span>⑂ Fork 2.2k</span><span>创建于 2023-08</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">Apache-2.0</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
+    <article class="card" data-cat="eval" data-lang="Python"
+             data-name="arize-ai/phoenix Arize 的观测与评测面板 做 RAG / Agent 调优对比的 本地起一个就能看 trace 和实验对比；云版功能更全。 agents ai-monitoring ai-observability aiengineering anthropic datasets"
+             data-stars="12387" data-upd="2026-11-24">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/Arize-ai/phoenix" target="_blank" rel="noopener">
+          <span class="owner">Arize-ai/</span><span class="name">phoenix</span>
+        </a>
+        <span class="stars" title="12,387 stars">★ 1.2万</span>
+      </div>
+      <h3 class="pitch">Arize 的观测与评测面板</h3>
+      <p class="note">本地起一个就能看 trace 和实验对比；云版功能更全。</p>
+      <div class="fit"><span class="fitk">适合</span>做 RAG / Agent 调优对比的</div>
+      <div class="topics"><span>⑂ Fork 1.3k</span><span>创建于 2022-11</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">Elastic-2.0</span>
+        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-24</span>
+      </div>
+    </article>
+    <article class="card" data-cat="eval" data-lang="Python"
+             data-name="agentops-ai/agentops 几行代码接入的 Agent 监控 SDK 想低成本先看到运行轨迹的 接入最快的一档，深度不如 Langfuse；近半年更新变慢。 agent agentops agents-sdk ai anthropic autogen"
+             data-stars="5972" data-upd="2026-06-25">
+      <div class="card-top">
+        <a class="repo" href="https://github.com/AgentOps-AI/agentops" target="_blank" rel="noopener">
+          <span class="owner">AgentOps-AI/</span><span class="name">agentops</span>
+        </a>
+        <span class="stars" title="5,972 stars">★ 5,972</span>
+      </div>
+      <h3 class="pitch">几行代码接入的 Agent 监控 SDK</h3>
+      <p class="note">接入最快的一档，深度不如 Langfuse；近半年更新变慢。</p>
+      <div class="fit"><span class="fitk">适合</span>想低成本先看到运行轨迹的</div>
+      <div class="topics"><span>⑂ Fork 668</span><span>创建于 2023-08</span></div>
+      <div class="card-foot">
+        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
+        <span class="meta-item">MIT</span>
+        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
+        <span class="meta-item upd"><span class="s s-mid">维护中</span>2026-06-25</span>
       </div>
     </article>
     </div>
@@ -1385,55 +1992,6 @@ footer p+p{margin-top:7px}
     </article>
     </div>
   </section>
-  <section class="group" data-cat="protocol">
-    <div class="group-head">
-      <h2>工具协议 / MCP</h2>
-      <span class="gsub">给 Agent 装手脚的标准接口</span>
-      <span class="gcount"><b class="gc-n">2</b> 个项目 · ★ 12.1万</span>
-    </div>
-    <div class="grid">
-    <article class="card" data-cat="protocol" data-lang="TypeScript"
-             data-name="modelcontextprotocol/servers MCP 官方参考服务器合集 要给 Agent 接工具、接数据源 MCP 已成事实标准，这里是官方示范实现与最佳实践来源。 "
-             data-stars="92190" data-upd="2026-11-19">
-      <div class="card-top">
-        <a class="repo" href="https://github.com/modelcontextprotocol/servers" target="_blank" rel="noopener">
-          <span class="owner">modelcontextprotocol/</span><span class="name">servers</span>
-        </a>
-        <span class="stars" title="92,190 stars">★ 9.2万</span>
-      </div>
-      <h3 class="pitch">MCP 官方参考服务器合集</h3>
-      <p class="note">MCP 已成事实标准，这里是官方示范实现与最佳实践来源。</p>
-      <div class="fit"><span class="fitk">适合</span>要给 Agent 接工具、接数据源</div>
-      <div class="topics"><span>⑂ Fork 1.2万</span><span>创建于 2024-11</span></div>
-      <div class="card-foot">
-        <span class="meta-item lang"><i class="ldot" style="background:#3178c6"></i>TypeScript</span>
-        <span class="meta-item">见仓库</span>
-        <span class="meta-item diff">门槛 <b>中</b><span class="dots"><i class="dot on"></i><i class="dot on"></i><i class="dot "></i></span></span>
-        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-19</span>
-      </div>
-    </article>
-    <article class="card" data-cat="protocol" data-lang="Python"
-             data-name="prefecthq/fastmcp 用几行 Python 写一个 MCP Server 要把内部系统暴露给 Agent 装饰器风格，是目前写 MCP 服务最省心的库。 "
-             data-stars="28715" data-upd="2026-11-23">
-      <div class="card-top">
-        <a class="repo" href="https://github.com/PrefectHQ/fastmcp" target="_blank" rel="noopener">
-          <span class="owner">PrefectHQ/</span><span class="name">fastmcp</span>
-        </a>
-        <span class="stars" title="28,715 stars">★ 2.9万</span>
-      </div>
-      <h3 class="pitch">用几行 Python 写一个 MCP Server</h3>
-      <p class="note">装饰器风格，是目前写 MCP 服务最省心的库。</p>
-      <div class="fit"><span class="fitk">适合</span>要把内部系统暴露给 Agent</div>
-      <div class="topics"><span>⑂ Fork 2.6k</span><span>创建于 2024-11</span></div>
-      <div class="card-foot">
-        <span class="meta-item lang"><i class="ldot" style="background:#3572A5"></i>Python</span>
-        <span class="meta-item">Apache-2.0</span>
-        <span class="meta-item diff">门槛 <b>易</b><span class="dots"><i class="dot on"></i><i class="dot "></i><i class="dot "></i></span></span>
-        <span class="meta-item upd"><span class="s s-on">活跃</span>2026-11-23</span>
-      </div>
-    </article>
-    </div>
-  </section>
 <div class="empty" id="empty">没有匹配的项目，换个关键词试试。</div>
 
 <section class="pick">
@@ -1452,6 +2010,12 @@ footer p+p{margin-top:7px}
       <div class="pick-a"><b>RAGFlow</b> 啃复杂文档，<b>LlamaIndex</b> 自己控检索链。</div></div>
     <div class="pick-item"><div class="pick-q">要跑模型生成的代码，怕出事</div>
       <div class="pick-a"><b>E2B</b> 沙箱 + 白名单网络，别在宿主机裸跑。</div></div>
+    <div class="pick-item"><div class="pick-q">上线前想量化效果，上线后想看清它干了什么</div>
+      <div class="pick-a"><b>DeepEval</b> 把评测写进 CI，<b>Langfuse</b> 看全链路 trace；只想先看轨迹用 <b>AgentOps</b>。</div></div>
+    <div class="pick-item"><div class="pick-q">要做能打断、延迟低的实时语音 Agent</div>
+      <div class="pick-a"><b>Pipecat</b> 自己拼 STT/LLM/TTS 管线；已有 WebRTC 链路就上 <b>LiveKit Agents</b>。</div></div>
+    <div class="pick-item"><div class="pick-q">想让 Agent 记住用户跨会话的偏好</div>
+      <div class="pick-a"><b>Mem0</b> / <b>supermemory</b> 接 API 最快；要图谱推理看 <b>cognee</b>，要研究记忆调度看 <b>MemOS</b>。</div></div>
   </div>
 </section>
 
