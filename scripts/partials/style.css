@@ -111,6 +111,19 @@ mark{background:#fff2b8;color:inherit;border-radius:3px;padding:0 1px}
 .pick-a b{color:var(--accent);font-weight:650}
 footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
 footer p+p{margin-top:7px}
+
+/* ---------- 页脚：微信二维码 ---------- */
+.connect{display:flex;gap:18px;align-items:center;margin-top:20px;padding:18px 20px;max-width:620px;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  font-size:13px;color:var(--ink2);line-height:1.6}
+.connect .qr{width:128px;height:128px;flex:none;background:#fff;border:1px solid var(--line);border-radius:8px;
+  cursor:zoom-in;transition:width .18s ease,height .18s ease}
+.connect.open .qr{width:280px;height:280px;cursor:zoom-out;border-color:#c9cfe0}
+.connect-body{min-width:0}
+.connect-title{font-size:14.5px;font-weight:650;color:var(--ink);margin-bottom:5px}
+.connect-body p{margin:0}
+.connect-body p+p{margin-top:6px}
+.connect-meta{color:var(--muted);font-size:12px}
 .empty{padding:60px 0;text-align:center;color:var(--muted);font-size:14px;display:none}
 .empty button{border:1px solid var(--line);background:#fff;color:var(--accent);font-family:inherit;font-size:13.5px;
   padding:6px 12px;border-radius:8px;cursor:pointer;margin:0 6px}
@@ -128,4 +141,8 @@ footer p+p{margin-top:7px}
   .chips::-webkit-scrollbar{display:none}
   .chip{flex:0 0 auto}
   .count-line{margin-top:6px}
+  /* 窄屏二维码卡片竖排，放大的尺寸也要跟着收 */
+  .connect{flex-direction:column;align-items:flex-start;gap:14px;padding:16px}
+  .connect .qr{width:112px;height:112px}
+  .connect.open .qr{width:240px;height:240px}
 }

@@ -227,5 +227,16 @@ addEventListener('scroll', () => {
   toolbar.classList.toggle('scrolled', scrollY > 8);
 }, {passive: true});
 
+// 页脚二维码：点一下放大，方便手机对着屏幕扫；再点一下收回
+const qr = document.getElementById('qr');
+if(qr){
+  qr.addEventListener('click', () => {
+    qr.closest('.connect').classList.toggle('open');
+  });
+  qr.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); qr.click(); }
+  });
+}
+
 readHash();
 apply();

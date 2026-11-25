@@ -14,6 +14,7 @@
 - data.json 里有、annotations.json 里没有的仓库 → 报错；反之 → 报错。
 - 组内按星数降序；赛道顺序以 tracks.json / tracks.en.json 为准。
 """
+import base64
 import datetime
 import html
 import json
@@ -23,8 +24,20 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SNAPSHOT_FILE = ROOT / "scripts/snapshot.json"
+QR_PNG = ROOT / "scripts/partials/wechat-qr.png"
 DIFF_CODE = {"易": "easy", "中": "medium", "难": "hard"}
 DIFF_N = {"易": 1, "中": 2, "难": 3}
+
+
+def wechat_qr_uri() -> str:
+    """二维码以 data URI 内嵌，页面仍是单文件（断网、双击本地打开都能用）。
+
+    源图是 scripts/partials/wechat-qr.png，改二维码只需替换这个文件后重新 build。
+    """
+    if not QR_PNG.exists():
+        sys.exit(f"缺少 {QR_PNG.relative_to(ROOT)}（页脚微信二维码）")
+    raw = base64.b64encode(QR_PNG.read_bytes()).decode("ascii")
+    return "data:image/png;base64," + raw
 
 LANG_COLOR = {
     "Python": "#3572A5", "TypeScript": "#3178c6", "JavaScript": "#f1e05a",
@@ -268,6 +281,7 @@ def build(lang, i18n, write=True):
         ("{{STATS}}", stats), ("{{CHIPS}}", "".join(chips)), ("{{LANGS}}", "".join(lang_opts)),
         ("{{GROUPS}}", "\n".join(groups)), ("{{N_REPOS}}", str(len(meta))),
         ("{{N_TRACKS}}", str(len(by_cat))), ("{{DATE}}", SNAP_DATE.isoformat()),
+        ("{{WECHAT_QR}}", wechat_qr_uri()),
     ]:
         assert ph in page, f"{tpl_name} 缺少占位符 {ph}"
         page = page.replace(ph, val)

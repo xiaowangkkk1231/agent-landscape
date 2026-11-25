@@ -4,6 +4,8 @@ A map of the agent projects people actually use, organized by track into one lis
 
 **Browse online → https://xiaowang018.github.io/agent-landscape/index-en.html** · [中文版](README.md)
 
+The bottom of the page carries a WeChat QR code: if you're stuck choosing between projects, can't get one running, or want to talk through how to adapt it, scan and ask. Click the code to enlarge it if you're scanning off the screen. It's embedded as a data URI, so the page stays a single file.
+
 **137 repositories / 17 tracks / 8.46M stars.** Every project carries a hand-written positioning note, who it is for, the effort it takes and its maintenance status — not just a star ranking. The page ends with a "Research front" section covering 18 papers and benchmarks from 2025–2026 that change how agents are designed or evaluated (not counted in the repository totals).
 
 ---
@@ -174,7 +176,8 @@ agent-landscape/
     ├── template.en.html        # English page template
     ├── partials/
     │   ├── style.css           # Shared CSS for both pages
-    │   └── app.js              # Shared search / filter / sort logic, strings from i18n.json
+    │   ├── app.js              # Shared search / filter / sort logic, strings from i18n.json
+    │   └── wechat-qr.png       # Footer WeChat QR (build.py inlines it as a data URI, page stays single-file)
     └── build.py                # Merge everything and render both pages
 ```
 

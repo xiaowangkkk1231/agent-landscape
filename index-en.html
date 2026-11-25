@@ -118,6 +118,19 @@ mark{background:#fff2b8;color:inherit;border-radius:3px;padding:0 1px}
 .pick-a b{color:var(--accent);font-weight:650}
 footer{margin-top:44px;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
 footer p+p{margin-top:7px}
+
+/* ---------- 页脚：微信二维码 ---------- */
+.connect{display:flex;gap:18px;align-items:center;margin-top:20px;padding:18px 20px;max-width:620px;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  font-size:13px;color:var(--ink2);line-height:1.6}
+.connect .qr{width:128px;height:128px;flex:none;background:#fff;border:1px solid var(--line);border-radius:8px;
+  cursor:zoom-in;transition:width .18s ease,height .18s ease}
+.connect.open .qr{width:280px;height:280px;cursor:zoom-out;border-color:#c9cfe0}
+.connect-body{min-width:0}
+.connect-title{font-size:14.5px;font-weight:650;color:var(--ink);margin-bottom:5px}
+.connect-body p{margin:0}
+.connect-body p+p{margin-top:6px}
+.connect-meta{color:var(--muted);font-size:12px}
 .empty{padding:60px 0;text-align:center;color:var(--muted);font-size:14px;display:none}
 .empty button{border:1px solid var(--line);background:#fff;color:var(--accent);font-family:inherit;font-size:13.5px;
   padding:6px 12px;border-radius:8px;cursor:pointer;margin:0 6px}
@@ -135,6 +148,10 @@ footer p+p{margin-top:7px}
   .chips::-webkit-scrollbar{display:none}
   .chip{flex:0 0 auto}
   .count-line{margin-top:6px}
+  /* 窄屏二维码卡片竖排，放大的尺寸也要跟着收 */
+  .connect{flex-direction:column;align-items:flex-start;gap:14px;padding:16px}
+  .connect .qr{width:112px;height:112px}
+  .connect.open .qr{width:240px;height:240px}
 }
 </style>
 </head>
@@ -3299,6 +3316,16 @@ footer p+p{margin-top:7px}
 <footer>
   <p>Source: GitHub REST API (/repos, read live), snapshot taken 2026-11-24. Star counts are a snapshot and keep changing.</p>
   <p>"Effort" is a subjective rating: Easy = runs out of the box, Medium = read the docs and change code, Hard = you need to understand its architecture or research background; in the Tutorials / Learning resources track it means reading effort (Easy = no prerequisites, Hard = needs theory). High stars don't make a project right for you — check the license (Apache-2.0 / MIT / AGPL) line by line before commercial use.</p>
+
+  <div class="connect">
+    <img class="qr" id="qr" src="data:image/png;base64,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" width="128" height="128" tabindex="0" role="button"
+         aria-label="QR code: click to enlarge" alt="WeChat QR code: scan to add me and talk AI">
+    <div class="connect-body">
+      <div class="connect-title">Learning AI together</div>
+      <p>How to pick one of these projects, get it running, and bend it to your own use case — happy to talk it through. Scan to add me on WeChat; a note saying "Agent" gets you through faster. (WeChat is where the Chinese AI-dev crowd actually hangs out.)</p>
+      <p class="connect-meta">Click the code to enlarge it if you're scanning off the screen.</p>
+    </div>
+  </div>
 </footer>
 </div>
 
@@ -3534,6 +3561,17 @@ if(langLink){
 addEventListener('scroll', () => {
   toolbar.classList.toggle('scrolled', scrollY > 8);
 }, {passive: true});
+
+// 页脚二维码：点一下放大，方便手机对着屏幕扫；再点一下收回
+const qr = document.getElementById('qr');
+if(qr){
+  qr.addEventListener('click', () => {
+    qr.closest('.connect').classList.toggle('open');
+  });
+  qr.addEventListener('keydown', e => {
+    if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); qr.click(); }
+  });
+}
 
 readHash();
 apply();
