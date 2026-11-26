@@ -43,7 +43,8 @@
   "js": {
    "all": "共 <b>{n}</b> 个项目 · {t} 个赛道",
    "some": "筛出 <b>{n}</b> / {total} 个项目",
-   "tag": "标签 "
+   "tag": "标签 ",
+   "phShort": "搜索项目 / 定位 / 场景…"
   },
   "chipAll": "全部",
   "langAll": "全部语言",
@@ -95,7 +96,8 @@
   "js": {
    "all": "<b>{n}</b> projects · {t} tracks",
    "some": "<b>{n}</b> of {total} projects shown",
-   "tag": "tag "
+   "tag": "tag ",
+   "phShort": "Search name, scenario…"
   },
   "chipAll": "All",
   "langAll": "All languages",

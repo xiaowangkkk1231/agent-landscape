@@ -11,19 +11,22 @@
 <div class="toolbar">
   <div class="tb-in">
     <input id="q" type="search" placeholder="Search name / positioning / scenario, e.g. browser, RAG, multi-agent…">
-    <select id="lang">{{LANGS}}</select>
-    <select id="sort">
-      <option value="stars">Sort by stars</option>
-      <option value="upd">Sort by last push</option>
-    </select>
-    <select id="diff">
-      <option value="">Any effort</option>
-      <option value="easy">Easy · runs out of the box</option>
-      <option value="medium">Medium · needs code changes</option>
-      <option value="hard">Hard · needs architecture knowledge</option>
-    </select>
-    <button class="tgl" id="act" aria-pressed="false" title="Only show projects with a push in the last 45 days">Active only<i></i></button>
-    <button id="reset">Reset</button>
+    <div class="tb-filters" id="tbFilters">
+      <select id="lang">{{LANGS}}</select>
+      <select id="sort">
+        <option value="stars">Sort by stars</option>
+        <option value="upd">Sort by last push</option>
+      </select>
+      <select id="diff">
+        <option value="">Any effort</option>
+        <option value="easy">Easy · runs out of the box</option>
+        <option value="medium">Medium · needs code changes</option>
+        <option value="hard">Hard · needs architecture knowledge</option>
+      </select>
+      <button class="tgl" id="act" aria-pressed="false" title="Only show projects with a push in the last 45 days">Active only<i></i></button>
+      <button id="reset">Reset</button>
+    </div>
+    <button class="fbtn" id="fbtn" type="button" aria-expanded="false" aria-controls="tbFilters">Filters<i id="fcount">0</i></button>
   </div>
   <div class="chips">{{CHIPS}}</div>
 </div>

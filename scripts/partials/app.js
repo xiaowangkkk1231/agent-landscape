@@ -5,6 +5,9 @@ const sortSel = document.getElementById('sort');
 const diffSel = document.getElementById('diff');
 const actBtn = document.getElementById('act');
 const resetBtn = document.getElementById('reset');
+const fbtn = document.getElementById('fbtn');
+const fcount = document.getElementById('fcount');
+const tbFilters = document.getElementById('tbFilters');
 const cnt = document.getElementById('cnt');
 const toolbar = document.querySelector('.toolbar');
 const chips = [...document.querySelectorAll('.chip')];
@@ -131,6 +134,14 @@ function apply(){
   // 只要任一控件离开默认状态（含只改排序），「重置」就该出现
   const dirty = curCat !== 'all' || !!raw || !!lg || !!df || actOnly || sortSel.value !== 'stars';
   resetBtn.classList.toggle('on', dirty);
+
+  // 手机上筛选控件收在面板里，用角标告诉用户「有 2 个条件在生效」，否则关着面板看不出被筛过
+  if(fbtn && fcount){
+    const n = (lg ? 1 : 0) + (df ? 1 : 0) + (actOnly ? 1 : 0) + (sortSel.value !== 'stars' ? 1 : 0);
+    fcount.textContent = n;
+    fbtn.classList.toggle('has', n > 0);
+    fbtn.setAttribute('aria-label', n ? `筛选条件 ${n} 项` : '筛选');
+  }
   syncHash();
 }
 
@@ -236,6 +247,30 @@ if(qr){
   qr.addEventListener('keydown', e => {
     if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); qr.click(); }
   });
+}
+
+// 窄屏搜索框放不下长 placeholder，换短的，别让提示语被截成半句
+const narrow = matchMedia('(max-width:640px)');
+const syncPh = () => { q.placeholder = narrow.matches && T.js.phShort ? T.js.phShort : q.dataset.ph; };
+q.dataset.ph = q.placeholder;
+syncPh();
+narrow.addEventListener('change', syncPh);
+
+// 手机端筛选面板：点「筛选」展开，选完 / 点空白 / Esc 收起
+if(fbtn && tbFilters){
+  const setOpen = open => {
+    tbFilters.classList.toggle('open', open);
+    fbtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+  fbtn.addEventListener('click', e => {
+    e.stopPropagation();
+    setOpen(!tbFilters.classList.contains('open'));
+  });
+  tbFilters.addEventListener('click', e => e.stopPropagation());
+  document.addEventListener('click', () => setOpen(false));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') setOpen(false); });
+  // select 一改就收起，否则面板一直盖着赛道 chips
+  tbFilters.querySelectorAll('select').forEach(s => s.addEventListener('change', () => setTimeout(() => setOpen(false), 120)));
 }
 
 readHash();

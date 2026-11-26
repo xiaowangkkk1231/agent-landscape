@@ -26,7 +26,7 @@ header{padding:56px 0 28px;border-bottom:1px solid var(--line);background:
 .langsw:hover{color:var(--ink);border-color:#c9cfe0}
 .kicker{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:650;margin-bottom:14px}
 h1{font-size:38px;line-height:1.22;letter-spacing:-.02em;font-weight:800}
-h1 em{font-style:normal;color:var(--accent)}
+h1 em{font-style:normal;color:var(--accent);white-space:nowrap}
 .lede{margin-top:14px;max-width:760px;font-size:15.5px;color:var(--ink2)}
 .stats{display:flex;gap:44px;margin-top:30px;flex-wrap:wrap}
 .stat b{display:block;font-size:27px;font-weight:780;letter-spacing:-.02em}
@@ -36,6 +36,8 @@ h1 em{font-style:normal;color:var(--accent)}
 .toolbar{position:sticky;top:0;z-index:20;background:rgba(246,247,249,.92);
   backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 0}
 .tb-in{max-width:1240px;margin:0 auto;padding:0 24px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.tb-filters{display:flex;gap:12px;align-items:center;flex:0 0 auto;min-width:0}
+.fbtn{display:none}
 #q{flex:1 1 260px;min-width:200px;padding:10px 14px;border:1px solid var(--line);border-radius:9px;
   background:#fff;font-size:14px;font-family:inherit;color:var(--ink);outline:none}
 #q:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
@@ -136,22 +138,70 @@ footer p+p{margin-top:7px}
   padding:6px 12px;border-radius:8px;cursor:pointer;margin:0 6px}
 .empty button:hover{background:var(--accent-soft);border-color:#c9cfe0}
 @media(max-width:640px){
-  h1{font-size:28px} .wrap{padding:0 16px 60px} header{padding:36px 0 22px}
-  .stats{gap:26px} .grid{grid-template-columns:1fr} .toolbar,.tb-in,.chips,.count-line{padding-left:16px;padding-right:16px}
-  /* 窄屏：搜索独占一行，其余控件横滑一行，赛道 chips 也压成单行横滑，避免吸顶栏吃掉半屏 */
-  .toolbar{padding:10px 0 6px}
-  .tb-in{gap:8px}
-  #q{flex:1 1 100%;min-width:0}
-  select,.tgl{padding:8px 10px;font-size:13px}
+  .wrap{padding:0 16px 56px}
+  header{padding:30px 0 20px}
+  h1{font-size:26px;line-height:1.28}
+  /* kicker 在 390 宽会和右上角语言按钮抢位置，压小字号与字距让它回到一行 */
+  .kicker{font-size:10.5px;letter-spacing:.08em;margin-bottom:10px}
+  .langsw{font-size:12px;padding:4px 10px}
+  .lede{font-size:14.5px;margin-top:12px}
+  .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px 18px;margin-top:24px}
+  .stat b{font-size:24px}
+  .stat span{font-size:12px}
+
+  /* 吸顶栏收紧：只留搜索 + 赛道 chips，语言/排序/门槛/只看活跃收进「筛选」面板，
+     否则四条控件竖排会把吸顶栏撑到 180px，手机上等于吃掉小半个屏 */
+  .toolbar{padding:8px 0 0}
+  .tb-in{padding:0 16px;gap:8px;flex-wrap:nowrap}
+  #q{flex:1 1 auto;min-width:0;padding:9px 12px;font-size:13.5px}
+  .fbtn{display:inline-flex;align-items:center;gap:5px;flex:none;padding:9px 12px;cursor:pointer;
+    border:1px solid var(--line);border-radius:9px;background:#fff;color:var(--ink2);
+    font-family:inherit;font-size:13px;white-space:nowrap}
+  .fbtn i{font-style:normal;font-size:10.5px;line-height:15px;min-width:15px;padding:0 4px;text-align:center;
+    border-radius:999px;background:var(--accent);color:#fff;display:none}
+  .fbtn.has i{display:inline-block}
+  .fbtn[aria-expanded="true"]{border-color:#c9cfe0;color:var(--ink)}
+  .tb-filters{position:absolute;left:0;right:0;top:100%;display:none;flex-wrap:wrap;gap:8px;z-index:2;
+    padding:12px 16px;background:#fff;border-bottom:1px solid var(--line);border-radius:0 0 14px 14px;
+    box-shadow:0 18px 30px -22px rgba(24,32,60,.65)}
+  .tb-filters.open{display:flex}
+  .tb-filters select,.tb-filters .tgl{flex:1 1 calc(50% - 4px);min-width:0;padding:9px 10px;font-size:13px}
+  .tb-filters #reset{flex:1 1 100%;justify-content:center;border:1px solid var(--line);background:#fff;
+    padding:9px;border-radius:9px}
   .chips{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;padding:8px 16px 2px;
     scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .chips::-webkit-scrollbar{display:none}
   .chip{flex:0 0 auto}
-  .count-line{margin-top:6px}
-  /* 窄屏二维码卡片竖排，放大的尺寸也要跟着收 */
+  .count-line{padding:0 16px;margin-top:8px}
+  .count-line .hint{display:none}
+
+  .group{margin-top:30px}
+  .group-head{gap:8px;padding-bottom:10px}
+  .group-head h2{font-size:17px}
+  .gsub{font-size:12px}
+  .gcount{font-size:12px}
+  .grid{grid-template-columns:1fr;gap:11px;margin-top:14px}
+
+  .card{padding:14px 15px 12px}
+  .repo{font-size:13.5px;overflow-wrap:anywhere}
+  .pitch{font-size:15px;margin-top:7px}
+  .note{font-size:12.8px;margin-top:6px}
+  .fit{font-size:12px;margin-top:9px;padding:5px 8px}
+  .card-foot{gap:10px;padding-top:11px;font-size:11.5px}
+
+  .pick{margin-top:34px;padding:20px 16px}
+  .pick h2{font-size:17px}
+  .pick p.sub{font-size:12.5px;margin-bottom:14px}
+  .pick-row{grid-template-columns:1fr;gap:10px}
+  .pick-item{padding:12px 13px}
+  .pick-q{font-size:13px}
+  .pick-a{font-size:12.5px}
+
+  footer{font-size:12px}
+  /* 窄屏二维码卡片竖排，码本身放大到 148px，手机对着屏幕扫更稳 */
   .connect{flex-direction:column;align-items:flex-start;gap:14px;padding:16px}
-  .connect .qr{width:112px;height:112px}
-  .connect.open .qr{width:240px;height:240px}
+  .connect .qr{width:148px;height:148px}
+  .connect.open .qr{width:260px;height:260px}
 }
 </style>
 </head>
@@ -159,19 +209,22 @@ footer p+p{margin-top:7px}
 <div class="toolbar">
   <div class="tb-in">
     <input id="q" type="search" placeholder="Search name / positioning / scenario, e.g. browser, RAG, multi-agent…">
-    <select id="lang"><option value="">All languages</option><option value="Python">Python (71)</option><option value="TypeScript">TypeScript (41)</option><option value="JavaScript">JavaScript (5)</option><option value="Jupyter Notebook">Jupyter Notebook (5)</option><option value="Go">Go (4)</option><option value="Rust">Rust (3)</option><option value="Shell">Shell (3)</option><option value="-">- (3)</option><option value="C#">C# (1)</option><option value="MDX">MDX (1)</option></select>
-    <select id="sort">
-      <option value="stars">Sort by stars</option>
-      <option value="upd">Sort by last push</option>
-    </select>
-    <select id="diff">
-      <option value="">Any effort</option>
-      <option value="easy">Easy · runs out of the box</option>
-      <option value="medium">Medium · needs code changes</option>
-      <option value="hard">Hard · needs architecture knowledge</option>
-    </select>
-    <button class="tgl" id="act" aria-pressed="false" title="Only show projects with a push in the last 45 days">Active only<i></i></button>
-    <button id="reset">Reset</button>
+    <div class="tb-filters" id="tbFilters">
+      <select id="lang"><option value="">All languages</option><option value="Python">Python (71)</option><option value="TypeScript">TypeScript (41)</option><option value="JavaScript">JavaScript (5)</option><option value="Jupyter Notebook">Jupyter Notebook (5)</option><option value="Go">Go (4)</option><option value="Rust">Rust (3)</option><option value="Shell">Shell (3)</option><option value="-">- (3)</option><option value="C#">C# (1)</option><option value="MDX">MDX (1)</option></select>
+      <select id="sort">
+        <option value="stars">Sort by stars</option>
+        <option value="upd">Sort by last push</option>
+      </select>
+      <select id="diff">
+        <option value="">Any effort</option>
+        <option value="easy">Easy · runs out of the box</option>
+        <option value="medium">Medium · needs code changes</option>
+        <option value="hard">Hard · needs architecture knowledge</option>
+      </select>
+      <button class="tgl" id="act" aria-pressed="false" title="Only show projects with a push in the last 45 days">Active only<i></i></button>
+      <button id="reset">Reset</button>
+    </div>
+    <button class="fbtn" id="fbtn" type="button" aria-expanded="false" aria-controls="tbFilters">Filters<i id="fcount">0</i></button>
   </div>
   <div class="chips"><button type="button" class="chip on" data-cat="all" aria-pressed="true">All<i>137</i></button><button type="button" class="chip" data-cat="framework" aria-pressed="false">Orchestration frameworks / SDKs<i>21</i></button><button type="button" class="chip" data-cat="platform" aria-pressed="false">Low-code platforms / Workflows<i>7</i></button><button type="button" class="chip" data-cat="coding" aria-pressed="false">Coding agents<i>21</i></button><button type="button" class="chip" data-cat="auto" aria-pressed="false">General autonomous agents<i>9</i></button><button type="button" class="chip" data-cat="multi" aria-pressed="false">Multi-agent collaboration<i>6</i></button><button type="button" class="chip" data-cat="browser" aria-pressed="false">Browser control<i>6</i></button><button type="button" class="chip" data-cat="desktop" aria-pressed="false">Desktop / Computer use<i>6</i></button><button type="button" class="chip" data-cat="voice" aria-pressed="false">Voice agents<i>3</i></button><button type="button" class="chip" data-cat="research" aria-pressed="false">Deep research / Retrieval<i>6</i></button><button type="button" class="chip" data-cat="knowledge" aria-pressed="false">Knowledge base / RAG<i>8</i></button><button type="button" class="chip" data-cat="memory" aria-pressed="false">Memory layers<i>7</i></button><button type="button" class="chip" data-cat="protocol" aria-pressed="false">Tool protocols / MCP<i>9</i></button><button type="button" class="chip" data-cat="skills" aria-pressed="false">Skill packs / Workflows<i>4</i></button><button type="button" class="chip" data-cat="eval" aria-pressed="false">Observability / Evaluation<i>6</i></button><button type="button" class="chip" data-cat="rl" aria-pressed="false">Agentic RL / Training environments<i>5</i></button><button type="button" class="chip" data-cat="infra" aria-pressed="false">Agent infrastructure<i>1</i></button><button type="button" class="chip" data-cat="learn" aria-pressed="false">Tutorials / Learning resources<i>12</i></button></div>
 </div>
@@ -3330,7 +3383,7 @@ footer p+p{margin-top:7px}
 </div>
 
 <script>
-window.__T = {"numStyle": "en", "js": {"all": "<b>{n}</b> projects · {t} tracks", "some": "<b>{n}</b> of {total} projects shown", "tag": "tag "}};
+window.__T = {"numStyle": "en", "js": {"all": "<b>{n}</b> projects · {t} tracks", "some": "<b>{n}</b> of {total} projects shown", "tag": "tag ", "phShort": "Search name, scenario…"}};
 </script>
 <script>
 const T = window.__T;
@@ -3340,6 +3393,9 @@ const sortSel = document.getElementById('sort');
 const diffSel = document.getElementById('diff');
 const actBtn = document.getElementById('act');
 const resetBtn = document.getElementById('reset');
+const fbtn = document.getElementById('fbtn');
+const fcount = document.getElementById('fcount');
+const tbFilters = document.getElementById('tbFilters');
 const cnt = document.getElementById('cnt');
 const toolbar = document.querySelector('.toolbar');
 const chips = [...document.querySelectorAll('.chip')];
@@ -3466,6 +3522,14 @@ function apply(){
   // 只要任一控件离开默认状态（含只改排序），「重置」就该出现
   const dirty = curCat !== 'all' || !!raw || !!lg || !!df || actOnly || sortSel.value !== 'stars';
   resetBtn.classList.toggle('on', dirty);
+
+  // 手机上筛选控件收在面板里，用角标告诉用户「有 2 个条件在生效」，否则关着面板看不出被筛过
+  if(fbtn && fcount){
+    const n = (lg ? 1 : 0) + (df ? 1 : 0) + (actOnly ? 1 : 0) + (sortSel.value !== 'stars' ? 1 : 0);
+    fcount.textContent = n;
+    fbtn.classList.toggle('has', n > 0);
+    fbtn.setAttribute('aria-label', n ? `筛选条件 ${n} 项` : '筛选');
+  }
   syncHash();
 }
 
@@ -3571,6 +3635,30 @@ if(qr){
   qr.addEventListener('keydown', e => {
     if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); qr.click(); }
   });
+}
+
+// 窄屏搜索框放不下长 placeholder，换短的，别让提示语被截成半句
+const narrow = matchMedia('(max-width:640px)');
+const syncPh = () => { q.placeholder = narrow.matches && T.js.phShort ? T.js.phShort : q.dataset.ph; };
+q.dataset.ph = q.placeholder;
+syncPh();
+narrow.addEventListener('change', syncPh);
+
+// 手机端筛选面板：点「筛选」展开，选完 / 点空白 / Esc 收起
+if(fbtn && tbFilters){
+  const setOpen = open => {
+    tbFilters.classList.toggle('open', open);
+    fbtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+  fbtn.addEventListener('click', e => {
+    e.stopPropagation();
+    setOpen(!tbFilters.classList.contains('open'));
+  });
+  tbFilters.addEventListener('click', e => e.stopPropagation());
+  document.addEventListener('click', () => setOpen(false));
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') setOpen(false); });
+  // select 一改就收起，否则面板一直盖着赛道 chips
+  tbFilters.querySelectorAll('select').forEach(s => s.addEventListener('change', () => setTimeout(() => setOpen(false), 120)));
 }
 
 readHash();

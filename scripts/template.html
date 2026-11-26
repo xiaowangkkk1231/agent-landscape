@@ -11,19 +11,22 @@
 <div class="toolbar">
   <div class="tb-in">
     <input id="q" type="search" placeholder="搜索项目名 / 定位 / 场景，例如：浏览器、RAG、多智能体…">
-    <select id="lang">{{LANGS}}</select>
-    <select id="sort">
-      <option value="stars">按星数排序</option>
-      <option value="upd">按最近更新</option>
-    </select>
-    <select id="diff">
-      <option value="">全部门槛</option>
-      <option value="easy">门槛 易 · 装完能跑</option>
-      <option value="medium">门槛 中 · 要改代码</option>
-      <option value="hard">门槛 难 · 要懂架构</option>
-    </select>
-    <button class="tgl" id="act" aria-pressed="false" title="只留 45 天内有提交的项目">只看活跃<i></i></button>
-    <button id="reset">重置</button>
+    <div class="tb-filters" id="tbFilters">
+      <select id="lang">{{LANGS}}</select>
+      <select id="sort">
+        <option value="stars">按星数排序</option>
+        <option value="upd">按最近更新</option>
+      </select>
+      <select id="diff">
+        <option value="">全部门槛</option>
+        <option value="easy">门槛 易 · 装完能跑</option>
+        <option value="medium">门槛 中 · 要改代码</option>
+        <option value="hard">门槛 难 · 要懂架构</option>
+      </select>
+      <button class="tgl" id="act" aria-pressed="false" title="只留 45 天内有提交的项目">只看活跃<i></i></button>
+      <button id="reset">重置</button>
+    </div>
+    <button class="fbtn" id="fbtn" type="button" aria-expanded="false" aria-controls="tbFilters">筛选<i id="fcount">0</i></button>
   </div>
   <div class="chips">{{CHIPS}}</div>
 </div>
